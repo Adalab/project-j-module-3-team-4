@@ -1,68 +1,26 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Proyecto 3. Un caso de código heredado
 
-In the project directory, you can run:
+## Resumen
 
-### `npm start`
+En este proyecto vamos a trabajar con un trabajo que nos viene dado, con código heredado, es decir escrito por otra persona y sobre el que tenemos que trabajar. En este caso es un poco especial porque trabajamos con el código heredado del proyecto 2 de un grupo de compañeras.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Caso de uso
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+La idea fundamental de este proyecto es que aprendamos a trabajar con un proyecto heredado. De esta forma desarrollaremos nuestra capacidad de adaptarnos a proyectos ya existentes. Esto nos preparará para, de cara al futuro, entrar en equipos nuevos de desarrollo con mayor rapidez, mejorar nuestra capacidad de modificación de código creado por otras personas y concienciarnos de la importancia de crear buen código visto desde la otra parte, la persona que lo recibe.
 
-### `npm test`
+## Especificaciones
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Partimos de un proyecto funcional y realizaremos una refactorización del código incluyendo el uso de React.
+De cara a la refactorización, el proyecto debe utilizar estas tecnologías:
+- Uso de Sass para los estilos
+- Uso de ES6 y React para la estructuración del JS de la aplicación
+- Uso de mediaqueries para que el diseño sea adaptable al dispositivo
+- Desarrollo usando la estrategia mobile first
+- Uso de git para el control de versiones del proyecto, con ramas y pull-requests para revisar los cambios de las compañeras
+- Publicación del resultado en Internet usando GitHub Pages
+- La webapp deberá tener las siguientes nuevas características:
+- Deberá usar transiciones y/o animaciones para mejorar interacciones con la aplicación
+- Debe implementarse con una navegación entre distintas páginas de la aplicación usando React router
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
