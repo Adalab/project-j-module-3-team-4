@@ -2,6 +2,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Proyecto 3. Un caso de código heredado
 
+## Integrantes
+Corina Borcoci, Elena Martínez, María José Plaza y Mercedes Carballal.
+
 ## Resumen
 
 En este proyecto vamos a trabajar con un trabajo que nos viene dado, con código heredado, es decir escrito por otra persona y sobre el que tenemos que trabajar. En este caso es un poco especial porque trabajamos con el código heredado del proyecto 2 de un grupo de compañeras.
