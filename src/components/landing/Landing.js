@@ -1,34 +1,36 @@
 import React from 'react';
 import Footer from '../Footer';
+import '../../stylesheets/Landing.scss';
+import BrandLogo from '../../images/logo-awesome-profile-cards.svg';
 
 class Landing extends React.Component {
   render() {
     return (
       <div>
-        <div class='page index1'>
-          <div class='page__box'>
+        <div className='page index1'>
+          <div className='page__box'>
             <img
-              src='./images/logo-awesome-profile-cards.svg'
+              src={BrandLogo}
               alt='Awesome Profile Cards Logo'
-              class='page__box__logo'
+              className='page__box__logo'
             />
-            <h1 class='page__box__title'>Crea tu tarjeta de visita</h1>
-            <p class='page__box__paragraph'>
+            <h1 className='page__box__title'>Crea tu tarjeta de visita</h1>
+            <p className='page__box__paragraph'>
               Crea mejores contactos profesionales de forma fácil y cómoda
             </p>
-            <ul class='page__box__iconBox'>
-              <li class='page__box__iconBox__elem'>
-                <i class='far fa-object-ungroup'></i>
+            <ul className='page__box__iconBox'>
+              <li className='page__box__iconBox__elem'>
+                <i className='far fa-object-ungroup'></i>
                 Diseña
               </li>
-              <li class='page__box__iconBox__elem'>
-                <i class='far fa-keyboard'></i>Rellena
+              <li className='page__box__iconBox__elem'>
+                <i className='far fa-keyboard'></i>Rellena
               </li>
-              <li class='page__box__iconBox__elem'>
-                <i class='fas fa-share-alt'></i>Comparte
+              <li className='page__box__iconBox__elem'>
+                <i className='fas fa-share-alt'></i>Comparte
               </li>
             </ul>
-            <a href='./page2.html' title='Start' class='page__box__button'>
+            <a href='./page2.html' title='Start' className='page__box__button'>
               comenzar
             </a>
           </div>

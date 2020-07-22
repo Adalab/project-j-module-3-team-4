@@ -1,7 +1,13 @@
 import React from 'react';
+import '../../stylesheets/Card.scss';
+import Esperanza from '../../images/esperanza.jpg';
 
 class Card extends React.Component {
   render() {
+    // Definir estilo inline para imagen de la card
+    const defaultImage = {
+      backgroundImage: `url(${Esperanza})`,
+    };
     return (
       <section className='page__container__card'>
         <div className='page__container__card__reset'>
@@ -23,7 +29,7 @@ class Card extends React.Component {
           </div>
           <div
             className='profile__image js__profile-image profile page__container__card__box__imgContainer'
-            style='background-image: url(./assets/images/esperanza.jpg);'
+            style={defaultImage}
           ></div>
           <ul className='page__container__card__box__socialMedia js-socialMediaList'>
             <li className='cold-icon js-socialMedia-icons'>

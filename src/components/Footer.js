@@ -1,4 +1,6 @@
 import React from 'react';
+import '../stylesheets/Footer.scss';
+import LogoAdalab from '../images/logo-adalab.png';
 
 class Footer extends React.Component {
   render() {
@@ -14,7 +16,7 @@ class Footer extends React.Component {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img src='../images/logo-adalab.png' alt='Adalab' />
+            <img src={LogoAdalab} alt='Adalab' />
           </a>
         </div>
       </footer>

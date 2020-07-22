@@ -1,4 +1,6 @@
 import React from 'react';
+import '../../stylesheets/Form.scss';
+import Arrow from '../../images/noun_astrology.svg';
 
 class Form extends React.Component {
   render() {
@@ -10,19 +12,19 @@ class Form extends React.Component {
             <h2>Diseña</h2>
           </div>
           <button className='js-angleDown1 rot' type='button'>
-            <img src='./assets/images/noun_astrology.svg' />
+            <img src={Arrow} alt='arrow' />
           </button>
         </div>
         <div className='page__container__form__design js-design'>
           <h3>Colores</h3>
           <div className='page__container__form__design__colorPalette'>
-            <label for='drawing'>
+            <label htmlFor='drawing'>
               <input
                 type='radio'
                 id='drawing'
                 name='drawing'
                 className='cold-palette'
-                checked
+                defaultChecked
               />
               <div className='cold'>
                 <span className='square square1'></span>
@@ -30,7 +32,7 @@ class Form extends React.Component {
                 <span className='square square3'></span>
               </div>
             </label>
-            <label for='drawing2'>
+            <label htmlFor='drawing2'>
               <input
                 type='radio'
                 id='drawing2'
@@ -43,7 +45,7 @@ class Form extends React.Component {
                 <span className='square square3'></span>
               </div>
             </label>
-            <label for='drawing3'>
+            <label htmlFor='drawing3'>
               <input
                 type='radio'
                 id='drawing3'
@@ -65,11 +67,11 @@ class Form extends React.Component {
             <h2>Rellena</h2>
           </div>
           <button className='js-angleDown2' type='button'>
-            <img src='./assets/images/noun_astrology.svg' />
+            <img src={Arrow} />
           </button>
         </div>
         <fieldset className='page__container__form__fill js-formData hidden'>
-          <label for='firstName'> Nombre completo </label>
+          <label htmlFor='firstName'> Nombre completo </label>
           <input
             id='firstName'
             type='text'
@@ -78,7 +80,7 @@ class Form extends React.Component {
             required
           />
 
-          <label for='work'> Puesto</label>
+          <label htmlFor='work'> Puesto</label>
           <input
             id='work'
             type='text'
@@ -105,7 +107,7 @@ class Form extends React.Component {
             <div className='profile__preview js__profile-preview'></div>
           </div>
 
-          <label for='email'> Email</label>
+          <label htmlFor='email'> Email</label>
           <input
             id='email'
             type='email'
@@ -114,7 +116,7 @@ class Form extends React.Component {
             required
           />
 
-          <label for='telephone'> Teléfono</label>
+          <label htmlFor='telephone'> Teléfono</label>
           <input
             id='telephone'
             type='tel'
@@ -123,7 +125,7 @@ class Form extends React.Component {
             required
           />
 
-          <label for='linkedin'> Linkedin</label>
+          <label htmlFor='linkedin'> Linkedin</label>
           <input
             id='linkedin'
             type='text'
@@ -131,7 +133,7 @@ class Form extends React.Component {
             placeholder='Ej: linkedin.com/in/sally.hill'
           />
 
-          <label for='github'> Github</label>
+          <label htmlFor='github'> Github</label>
           <input
             id='github'
             type='text'
@@ -146,7 +148,7 @@ class Form extends React.Component {
             <h2>Comparte</h2>
           </div>
           <button className='js-angleDown3' type='button'>
-            <img src='./assets/images/noun_astrology.svg' />
+            <img src={Arrow} alt='arrow' />
           </button>
         </div>
         <div className='page__container__form__share js-share hidden'>

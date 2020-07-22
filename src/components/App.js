@@ -1,7 +1,8 @@
 import React from 'react';
-import '../stylesheets/App.css';
+import '../stylesheets/App.scss';
 import Footer from './Footer';
 import Landing from './landing/Landing';
+import CardGenerator from './card/CardGenerator';
 import Header from './card/Header';
 
 class App extends React.Component {
@@ -9,6 +10,7 @@ class App extends React.Component {
     return (
       <div className='App'>
         <Landing />
+        {/* <CardGenerator /> */}
       </div>
     );
   }
