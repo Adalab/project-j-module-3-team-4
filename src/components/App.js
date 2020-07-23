@@ -8,9 +8,9 @@ import Header from './card/Header';
 class App extends React.Component {
   render() {
     return (
-      <div className='App'>
-        <Landing />
-        {/* <CardGenerator /> */}
+      <div className="App">
+        {/* <Landing /> */}
+        <CardGenerator />
       </div>
     );
   }
