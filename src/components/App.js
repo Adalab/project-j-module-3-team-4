@@ -9,8 +9,8 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-        <Landing />
-        {/* <CardGenerator /> */}
+        {/* <Landing /> */}
+        <CardGenerator />
       </div>
     );
   }
