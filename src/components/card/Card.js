@@ -1,6 +1,8 @@
 import React from 'react';
 import '../../stylesheets/Card.scss';
 import Esperanza from '../../images/esperanza.jpg';
+import CardSocialMediaIcon from './CardSocialMediaIcon';
+
 
 class Card extends React.Component {
   render() {
@@ -32,46 +34,26 @@ class Card extends React.Component {
             style={defaultImage}
           ></div>
           <ul className='page__container__card__box__socialMedia js-socialMediaList'>
-            <li className='cold-icon js-socialMedia-icons'>
-              <a
-                className='js-phone-result'
-                href=''
-                title='Contact by phone'
-                target='_blank'
-              >
-                <i className='fas fa-mobile-alt'></i>
-              </a>
-            </li>
-            <li className='js-socialMedia-icons cold-icon'>
-              <a
-                className='js-email-result'
-                href=''
-                title='Contact by email'
-                target='_blank'
-              >
-                <i className='far fa-envelope'></i>
-              </a>
-            </li>
-            <li className='js-socialMedia-icons cold-icon'>
-              <a
-                className='js-linkedin-result'
-                href=''
-                title='Go to Linkedin'
-                target='_blank'
-              >
-                <i className='fab fa-linkedin-in'></i>
-              </a>
-            </li>
-            <li className='js-socialMedia-icons cold-icon'>
-              <a
-                className='js-github-result'
-                href=''
-                title='Go to  Github'
-                target='_blank'
-              >
-                <i className='fab fa-github-alt'></i>
-              </a>
-            </li>
+            <CardSocialMediaIcon  
+              anchorClass="fas fa-mobile-alt" 
+              iconClass='js-phone-result'  
+              href="" 
+              title="Contact by phone"/>
+            <CardSocialMediaIcon  
+              anchorClass="far fa-envelope" 
+              iconClass='js-email-result'  
+              href="" 
+              title="Contact by email"/>
+            <CardSocialMediaIcon  
+              anchorClass="fab fa-linkedin-in" 
+              iconClass='js-linkedin-result'  
+              href="" 
+              title="Go to Linkedin"/>
+            <CardSocialMediaIcon  
+              anchorClass="fab fa-github-alt" 
+              iconClass='js-github-result'  
+              href="" 
+              title="Go to Github"/>
           </ul>
         </div>
       </section>

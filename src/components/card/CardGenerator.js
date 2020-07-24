@@ -6,6 +6,22 @@ import Footer from '../Footer';
 import '../../stylesheets/CardGenerator.scss';
 
 class CardGenerator extends React.Component {
+constructor (props){
+  super(props);
+  this.state = {
+    userData: {
+      palette: 1,
+      name: '',
+      job: '',
+      email: '',
+      phone: 0,
+      linkedin: '',
+      github: '',
+      photo: '',
+  }
+ } 
+}
+
   render() {
     return (
       <div>

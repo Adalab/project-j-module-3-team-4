@@ -20,6 +20,7 @@
       justify-content: space-between;
       padding: 10px 0px;
       border-bottom: 1px solid $colorLines;
+      cursor: pointer;
 
       &__title {
         display: flex;
@@ -43,6 +44,7 @@
       }
       & button {
         background: none;
+        cursor: pointer;
       }
     }
 
@@ -74,7 +76,7 @@
           input {
             margin-right: 10px;
           }
-          .cold {
+          .water {
             display: flex;
             justify-content: flex-start;
             .square {
@@ -95,7 +97,7 @@
               background-color: #a2deaf;
             }
           }
-          .hot {
+          .fire {
             display: flex;
             justify-content: flex-start;
             margin: 20px 0;
@@ -118,7 +120,7 @@
               background-color: #e95626;
             }
           }
-          .mix {
+          .earth {
             display: flex;
             justify-content: flex-start;
             .square {
@@ -139,6 +141,27 @@
               background-color: #a0c0cf;
             }
           }
+          .air {
+            display: flex;
+            justify-content: flex-start;
+            .square {
+              margin: 0;
+              padding: 0;
+              display: inline-block;
+              //border: 1px solid red;
+              width: 30px;
+              height: 25px;
+            }
+            & .square1 {
+              background-color: #3b9c7f;
+            }
+            & .square2 {
+              background-color: #57c9a6;
+            }
+            & .square3 {
+              background-color: #a2deaf;
+            }
+          }
         }
       }
     }
@@ -150,12 +173,14 @@
         line-height: 20px;
         color: $colorPrimaryDark;
         margin-top: 18px;
+        text-align: left;
       }
 
       label,
       input {
         //border: 1px solid red;
         display: block;
+        text-align: left;
         width: 100%;
       }
       input {
@@ -194,6 +219,14 @@
       justify-content: center;
       align-items: center;
       margin: 30px auto 30px auto;
+      cursor: pointer;
+      transition: background-color 1s ease;
+      box-shadow: none;
+      outline: none;
+      &:hover {
+        font-weight: bold;
+        background-color: #114e4e;
+      }
       & .create {
         background-color: $colorSecondaryDark;
         text-transform: uppercase;
@@ -275,6 +308,14 @@
   font-size: 14px;
   line-height: 20px;
   margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+  box-shadow: none;
+  outline: none;
+  &:hover {
+    font-weight: bold;
+    background-color: #114e4e;
+  }
 }
 .action__hiddenField {
   /* Ocultamos el input de tipo "file" porque no podemos 
