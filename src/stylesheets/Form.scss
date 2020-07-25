@@ -55,6 +55,9 @@
       flex-direction: row;
       justify-content: space-between;
       align-content: initial;
+      .element {
+        margin-right: 20px;
+      }
       & h3 {
         font-family: $fontFamily;
         font-size: 14px;
@@ -71,8 +74,9 @@
         label {
           display: flex;
           flex-direction: row;
-          justify-content: center;
+          justify-content: flex-end;
           align-items: center;
+          margin-bottom: 20px;
           input {
             margin-right: 10px;
           }
@@ -100,7 +104,6 @@
           .fire {
             display: flex;
             justify-content: flex-start;
-            margin: 20px 0;
 
             .square {
               margin: 0;

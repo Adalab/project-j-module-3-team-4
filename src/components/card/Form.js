@@ -13,8 +13,7 @@ class Form extends React.Component {
             <h3>Colores</h3>
             <div className='page__container__form__design__colorPalette'>
               <label htmlFor='drawing'>
-                {' '}
-                Agua
+                <p class='element'>Agua</p>{' '}
                 <input
                   type='radio'
                   id='drawing'
@@ -29,8 +28,7 @@ class Form extends React.Component {
                 </div>
               </label>
               <label htmlFor='drawing2'>
-                {' '}
-                Fuego
+                <p class='element'>Fuego</p>{' '}
                 <input
                   type='radio'
                   id='drawing2'
@@ -44,8 +42,7 @@ class Form extends React.Component {
                 </div>
               </label>
               <label htmlFor='drawing3'>
-                {' '}
-                Tierra
+                <p class='element'>Tierra</p>{' '}
                 <input
                   type='radio'
                   id='drawing3'
@@ -59,8 +56,7 @@ class Form extends React.Component {
                 </div>
               </label>
               <label htmlFor='drawing4'>
-                {' '}
-                Aire
+                <p class='element'>Aire</p>{' '}
                 <input
                   type='radio'
                   id='drawing4'

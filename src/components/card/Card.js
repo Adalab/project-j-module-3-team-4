@@ -1,8 +1,7 @@
 import React from 'react';
 import '../../stylesheets/Card.scss';
-import Esperanza from '../../images/esperanza.jpg';
+import Esperanza from '../../zodiaco/crop-3.jpeg';
 import CardSocialMediaIcon from './CardSocialMediaIcon';
-
 
 class Card extends React.Component {
   render() {
@@ -34,26 +33,30 @@ class Card extends React.Component {
             style={defaultImage}
           ></div>
           <ul className='page__container__card__box__socialMedia js-socialMediaList'>
-            <CardSocialMediaIcon  
-              anchorClass="fas fa-mobile-alt" 
-              iconClass='js-phone-result'  
-              href="" 
-              title="Contact by phone"/>
-            <CardSocialMediaIcon  
-              anchorClass="far fa-envelope" 
-              iconClass='js-email-result'  
-              href="" 
-              title="Contact by email"/>
-            <CardSocialMediaIcon  
-              anchorClass="fab fa-linkedin-in" 
-              iconClass='js-linkedin-result'  
-              href="" 
-              title="Go to Linkedin"/>
-            <CardSocialMediaIcon  
-              anchorClass="fab fa-github-alt" 
-              iconClass='js-github-result'  
-              href="" 
-              title="Go to Github"/>
+            <CardSocialMediaIcon
+              anchorClass='fas fa-mobile-alt'
+              iconClass='js-phone-result'
+              href=''
+              title='Contact by phone'
+            />
+            <CardSocialMediaIcon
+              anchorClass='far fa-envelope'
+              iconClass='js-email-result'
+              href=''
+              title='Contact by email'
+            />
+            <CardSocialMediaIcon
+              anchorClass='fab fa-linkedin-in'
+              iconClass='js-linkedin-result'
+              href=''
+              title='Go to Linkedin'
+            />
+            <CardSocialMediaIcon
+              anchorClass='fab fa-github-alt'
+              iconClass='js-github-result'
+              href=''
+              title='Go to Github'
+            />
           </ul>
         </div>
       </section>
