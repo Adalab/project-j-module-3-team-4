@@ -8,7 +8,7 @@ const CardSelectorList = props => {
         <div className={`CardList ${props.styleClass}`}>
             <CardSelector theme="moon" position="first"/>
             <CardSelector theme="joker" position="middle"/>
-            <CardSelector theme="sun" position="third"/>
+            <CardSelector theme="heart" position="third"/>
         </div>
     )
     }

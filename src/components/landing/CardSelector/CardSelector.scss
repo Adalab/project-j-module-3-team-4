@@ -3,6 +3,7 @@
     width: 120px;
     margin: -20px;
     transition: margin .5s ease;
+    box-shadow: 0 5px 10px black;
 
 
     &:hover {
@@ -24,8 +25,8 @@
     background-image: url(../../../images/tarot-cards/card-moon6.png);
 }
 
-.sun {
-    background-image: url(../../../images/tarot-cards/card-sun6.png);
+.heart {
+    background-image: url(../../../images/tarot-cards/card-heart.png);
 }
 
 .joker {

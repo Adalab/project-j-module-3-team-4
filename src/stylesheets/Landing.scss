@@ -2,10 +2,12 @@
 
 .page {
   &__box {
-    background: rgb(158, 191, 255);
+    font-family: 'Lato', sans-serif;;
+    // background: rgb(158, 191, 255);
     background-image: url(../images/background-t.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     // background: radial-gradient(
     //   circle,
     //   rgba(158, 191, 255, 1) 0%,
