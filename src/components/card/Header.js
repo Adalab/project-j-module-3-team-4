@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../stylesheets/Header.scss';
+import CardList from '../landing/CardSelectorList/CardSelectorList'
 import BrandLogo from '../../images/logo-awesome-profile-cards.svg';
 
 class Header extends React.Component {
@@ -13,6 +14,7 @@ class Header extends React.Component {
         >
           <img src={BrandLogo} alt='Awesome profile cards logo' />
         </a>
+        {/* <CardList styleClass="mini"/> */}
       </header>
     );
   }

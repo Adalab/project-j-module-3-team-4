@@ -2,10 +2,14 @@ import React from 'react';
 
 class LandingButton extends React.Component {
   render() {
+
     return (
-      <a href="./page2.html" title="Start" className="page__box__button">
+      <button 
+        onClick={this.props.isLanding}
+        title="Start" 
+        className="page__box__button">
         comenzar
-      </a>
+      </button>
     );
   }
 }

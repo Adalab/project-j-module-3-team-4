@@ -4,6 +4,7 @@ import LandingButton from './LandingButton';
 import LandingSteps from './LandingSteps';
 import '../../stylesheets/Landing.scss';
 import BrandLogo from '../../images/logo-awesome-profile-cards.svg';
+import CardSelectorList from './CardSelectorList/CardSelectorList';
 
 class Landing extends React.Component {
   render() {
@@ -15,7 +16,8 @@ class Landing extends React.Component {
             <h1 className="page__box__title">Crea tu tarjeta de visita</h1>
             <p className="page__box__paragraph">Crea mejores contactos profesionales de forma fácil y cómoda</p>
             <LandingSteps />
-            <LandingButton />
+            <LandingButton isLanding={this.props.isLanding}/>
+            <CardSelectorList />
           </div>
         </div>
         <Footer />

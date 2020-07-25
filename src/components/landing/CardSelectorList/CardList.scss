@@ -1,0 +1,37 @@
+.CardList {
+    position: relative;
+    width: 700px;
+    height: 180px;
+    border: solid 1px red;
+}
+
+
+
+.mini {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+
+    .card-view__container {
+        height: 100px;
+        width: 100px;
+        background-size: 80px 100px;
+        background-repeat: no-repeat;
+        border-radius: 18px;    
+    }
+
+    .CardSelector {
+        display: inline-block;
+        width: 120px;
+        margin: -20px;
+        transition: margin .5s ease;
+    
+    
+        &:hover {
+            margin: 0 25px;
+            cursor: pointer;
+        }
+    }
+}
