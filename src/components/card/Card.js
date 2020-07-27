@@ -23,7 +23,7 @@ class Card extends React.Component {
         <div className='page__container__card__box'>
           <div className='page__container__card__box__border cold-border js-border-color'>
             <h3 className='page__container__card__box__name js-name cold-name js-userName-result'>
-              Nombre Apellido
+              {this.props.name}
             </h3>
             <p className='page__container__card__box__job js-job cold-job js-userJob-result'>
               Front-end Developer
