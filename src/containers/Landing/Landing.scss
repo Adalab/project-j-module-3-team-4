@@ -10,7 +10,7 @@
       rgb(142, 172, 233) 100%
     ); */
     // background-color: $colorBackgroundIndex;
-    background-image: url("../../zodiaco/noise.png");
+    background-image: url("../../images/background-b.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,8 +24,8 @@
       width: 250px;
     }
     &__title {
-      color: rgb(31, 47, 70);
-      font-family: $secondaryFontFamily;
+      color: lightsteelblue;
+      font-family: lightsteelblue;
       font-size: 1.188rem;
     }
     &__paragraph {
@@ -54,7 +54,7 @@
         width: calc(100% / 3);
         & i {
           font-size: 1.625rem;
-          color: rgb(31, 47, 70);
+          color: lightsteelblue;
         }
 
         .elem-title {

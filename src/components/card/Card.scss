@@ -174,3 +174,17 @@
     transform: rotate(360deg);
   }
 }
+
+@include tablet {
+  .page__container__card {
+    &::before {
+      background: url("../../zodiaco/constelaciones.jpeg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+@include desktop {
+}
