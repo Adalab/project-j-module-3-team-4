@@ -1,34 +1,29 @@
-import React from 'react';
+import React from "react";
 
-import './App.scss';
+import "./App.scss";
 
-import Landing from './Landing/Landing';
-import CardGenerator from './CardGenerator/CardGenerator';
+import Landing from "./Landing/Landing";
+import CardGenerator from "./CardGenerator/CardGenerator";
 
 class App extends React.Component {
   state = {
-    isLanding: true
-  }
+    isLanding: true,
+  };
 
   changePage = () => {
     this.setState({
-      isLanding: !this.state.isLanding
-    })
-  }
+      isLanding: !this.state.isLanding,
+    });
+  };
 
   render() {
-
     let result = <CardGenerator />;
 
     if (this.state.isLanding) {
-      result = <Landing isLanding={this.changePage}/>
-    } 
+      result = <Landing isLanding={this.changePage} />;
+    }
 
-    return (
-      <div className="App">
-        {result}
-      </div>
-    );
+    return <div className="App">{result}</div>;
   }
 }
 

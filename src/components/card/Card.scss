@@ -1,5 +1,5 @@
-@import '../../stylesheets/mixins', '../../stylesheets/reset', '../../stylesheets/variables';
-
+@import "../../stylesheets/mixins", "../../stylesheets/reset",
+  "../../stylesheets/variables";
 
 .page__container {
   @include tablet {
@@ -17,12 +17,12 @@
     border: 1px solid $colorLight;
     border-radius: 25px;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 150%;
       height: 150%;
       z-index: -1;
-      background: url('../../images/zodiac.png');
+      background: url("../../zodiaco/constelaciones.jpeg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -39,18 +39,28 @@
 
     &__reset {
       width: 240px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
 
       &__btn {
         width: 75px;
         height: 30px;
         border-radius: 22.5px;
         border: 1px solid $colorLight;
-        background-color: $colorBackgroundDark;
+        background-color: transparent;
         font-size: 12px;
         font-family: $fontFamily;
-        color: $colorFontCard;
+        color: $colorLight;
         text-transform: uppercase;
         margin-bottom: 20px;
+        cursor: pointer;
+        &:hover {
+          background-color: $colorBackgroundLight;
+          color: $colorSecondaryDark;
+          border: 1px solid $colorSecondaryDark;
+          font-weight: bold;
+        }
 
         .far .fa-trash-alt {
           font-size: 12px;
@@ -66,6 +76,7 @@
       width: 240px;
       height: 329px;
       padding: 21px 0 10px 0;
+      text-align: left;
 
       &__name {
         font-family: $fontFamilyTertiary;

@@ -1,19 +1,19 @@
-@import '../../stylesheets/mixins', '../../stylesheets/reset', '../../stylesheets/variables';
+@import "../../stylesheets/mixins", "../../stylesheets/reset",
+  "../../stylesheets/variables";
 
 .page {
   &__box {
-    font-family: 'Lato', sans-serif;;
-    // background: rgb(158, 191, 255);
-    background-image: url(../../images/background-t.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    // background: radial-gradient(
-    //   circle,
-    //   rgba(158, 191, 255, 1) 0%,
-    //   rgba(35, 102, 235, 1) 100%
-    // );
+    /* background: rgb(158, 191, 255);
+    background: radial-gradient(
+      circle,
+      rgba(158, 191, 255, 1) 0%,
+      rgb(142, 172, 233) 100%
+    ); */
     // background-color: $colorBackgroundIndex;
+    background-image: url("../../zodiaco/noise.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,14 +24,14 @@
       width: 250px;
     }
     &__title {
-      color: $colorSecondaryDark;
+      color: rgb(31, 47, 70);
       font-family: $secondaryFontFamily;
       font-size: 1.188rem;
     }
     &__paragraph {
       width: 264.8px;
       text-align: center;
-      color: $colorPrimaryDark;
+      color: lightsteelblue;
       font-family: $fontFamily;
       font-size: 0.75rem;
       padding-bottom: 27px;
@@ -39,7 +39,7 @@
     &__iconBox {
       width: 268px;
       height: 73.8px;
-      border: solid 1.6px rgba($colorSecondaryDark, 0.21);
+      border: solid 1.6px lightsteelblue;
       border-radius: 4px;
       display: flex;
       justify-content: space-evenly;
@@ -54,7 +54,11 @@
         width: calc(100% / 3);
         & i {
           font-size: 1.625rem;
-          color: $colorSecondaryDark;
+          color: rgb(31, 47, 70);
+        }
+
+        .elem-title {
+          color: lightsteelblue;
         }
       }
     }
@@ -64,7 +68,7 @@
       width: 129px;
       height: 42px;
       border-radius: 21px;
-      background-color: $colorPrimaryMedium;
+      background-color: rgb(31, 47, 70);
       color: $colorLight;
       display: flex;
       justify-content: center;
@@ -76,9 +80,14 @@
       font-weight: 600;
 
       line-height: 5rem;
-
+      cursor: pointer;
+      transition: background-color 1s ease;
+      box-shadow: none;
+      outline: none;
       &:hover {
-        cursor: pointer;
+        font-weight: bold;
+        background-color: lightsteelblue;
+        color: rgb(31, 47, 70);
       }
     }
   }
@@ -101,8 +110,9 @@
       &__iconBox {
         width: 325px;
         height: 86px;
-        border: solid 2px rgba($colorSecondaryDark, 0.21);
+        border: solid 2px rgb(31, 47, 70);
         border-radius: 5px;
+
         &__elem {
           & i {
             font-size: 1.813rem;
@@ -110,7 +120,7 @@
         }
       }
       &__button {
-        margin-top: 80px;
+        margin-top: 186px;
         margin-bottom: 59px;
       }
     }
