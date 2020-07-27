@@ -8,7 +8,7 @@ import Header from './card/Header';
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className='App'>
         {/* <Landing /> */}
         <CardGenerator />
       </div>
