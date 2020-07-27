@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './Header';
-import Card from './Card';
-import Form from './Form';
-import Footer from '../Footer';
-import '../../stylesheets/CardGenerator.scss';
+import Header from '../../components/Header/Header';
+import Card from '../../components/Card/Card';
+import Form from '../../components/Form/Form';
+import Footer from '../../components/Footer/Footer';
+import './CardGenerator.scss';
 
 class CardGenerator extends React.Component {
 constructor (props){

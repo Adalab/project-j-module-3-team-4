@@ -1,10 +1,10 @@
-@import 'mixins', 'reset', 'variables';
+@import '../../stylesheets/mixins', '../../stylesheets/reset', '../../stylesheets/variables';
 
 .page {
   &__box {
     font-family: 'Lato', sans-serif;;
     // background: rgb(158, 191, 255);
-    background-image: url(../images/background-t.jpg);
+    background-image: url(../../images/background-t.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

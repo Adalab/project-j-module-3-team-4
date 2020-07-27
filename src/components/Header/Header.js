@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../stylesheets/Header.scss';
-import CardList from '../landing/CardSelectorList/CardSelectorList'
+import './Header.scss';
+import CardList from '../ThemeCards/CardSelectorList/CardSelectorList'
 import BrandLogo from '../../images/logo-awesome-profile-cards.svg';
 
 class Header extends React.Component {

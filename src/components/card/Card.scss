@@ -1,4 +1,5 @@
-@import 'mixins', 'reset', 'variables';
+@import '../../stylesheets/mixins', '../../stylesheets/reset', '../../stylesheets/variables';
+
 
 .page__container {
   @include tablet {
@@ -21,7 +22,7 @@
       width: 150%;
       height: 150%;
       z-index: -1;
-      background: url('../images/zodiac.png');
+      background: url('../../images/zodiac.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;

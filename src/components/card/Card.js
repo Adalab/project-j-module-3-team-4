@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../stylesheets/Card.scss';
+import './Card.scss';
 import Esperanza from '../../images/esperanza.jpg';
-import CardSocialMediaIcon from './CardSocialMediaIcon';
+import CardSocialMediaIcon from './CardSocialMediaIcon/CardSocialMediaIcon';
 
 
 class Card extends React.Component {

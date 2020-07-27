@@ -1,9 +1,9 @@
 import React from 'react';
-import '../stylesheets/App.scss';
-import Footer from './Footer';
-import Landing from './landing/Landing';
-import CardGenerator from './card/CardGenerator';
-import Header from './card/Header';
+import './App.scss';
+import Footer from '../components/Footer/Footer';
+import Landing from './Landing/Landing';
+import CardGenerator from './CardGenerator/CardGenerator';
+import Header from '../components/Header/Header';
 
 class App extends React.Component {
   state = {

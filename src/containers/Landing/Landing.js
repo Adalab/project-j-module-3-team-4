@@ -1,10 +1,10 @@
 import React from 'react';
-import Footer from '../Footer';
-import LandingButton from './LandingButton';
-import LandingSteps from './LandingSteps';
-import '../../stylesheets/Landing.scss';
+import Footer from '../../components/Footer/Footer';
+import LandingButton from '../../components/LandingButton/LandingButton';
+import LandingSteps from '../../components/LandingSteps/LandingSteps';
+import './Landing.scss';
 import BrandLogo from '../../images/logo-awesome-profile-cards.svg';
-import CardSelectorList from './CardSelectorList/CardSelectorList';
+import CardSelectorList from '../../components/ThemeCards/CardSelectorList/CardSelectorList';
 
 class Landing extends React.Component {
   constructor(props) {

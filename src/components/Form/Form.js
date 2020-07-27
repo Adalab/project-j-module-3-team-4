@@ -1,6 +1,6 @@
 import React from 'react';
-import Collapsible from './Collapsible';
-import '../../stylesheets/Form.scss';
+import Collapsible from './Collapsible/Collapsible';
+import './Form.scss';
 import Arrow from '../../images/noun_astrology.svg';
 
 class Form extends React.Component {

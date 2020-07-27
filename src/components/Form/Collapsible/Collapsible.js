@@ -1,5 +1,5 @@
 import React from 'react';
-import Arrow from '../../images/noun_astrology.svg';
+import Arrow from '../../../images/noun_astrology.svg';
 
 class Collapsible extends React.Component{
     render(){
