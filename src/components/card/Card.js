@@ -23,10 +23,10 @@ class Card extends React.Component {
         <div className='page__container__card__box'>
           <div className='page__container__card__box__border cold-border js-border-color'>
             <h3 className='page__container__card__box__name js-name cold-name js-userName-result'>
-              Nombre Apellido
+              {this.props.userDataInfo.name || 'Nombre Apellido'} 
             </h3>
             <p className='page__container__card__box__job js-job cold-job js-userJob-result'>
-              Front-end Developer
+            {this.props.userDataInfo.job || 'Front-end Developer'} 
             </p>
           </div>
           <div
@@ -37,22 +37,22 @@ class Card extends React.Component {
             <CardSocialMediaIcon  
               anchorClass="fas fa-mobile-alt" 
               iconClass='js-phone-result'  
-              href="" 
+              href={this.props.userDataInfo.phone} 
               title="Contact by phone"/>
             <CardSocialMediaIcon  
               anchorClass="far fa-envelope" 
               iconClass='js-email-result'  
-              href="" 
+              href={`mailto:${this.props.userDataInfo.email}`} 
               title="Contact by email"/>
             <CardSocialMediaIcon  
               anchorClass="fab fa-linkedin-in" 
               iconClass='js-linkedin-result'  
-              href="" 
+              href={`https://www.linkedin.com/in/${this.props.userDataInfo.linkedin}`} 
               title="Go to Linkedin"/>
             <CardSocialMediaIcon  
               anchorClass="fab fa-github-alt" 
               iconClass='js-github-result'  
-              href="" 
+              href={`https://github.com/${this.props.userDataInfo.github}`} 
               title="Go to Github"/>
           </ul>
         </div>

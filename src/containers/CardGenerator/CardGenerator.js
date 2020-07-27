@@ -20,6 +20,20 @@ constructor (props){
       photo: '',
   }
  } 
+  this.updateUserData = this.updateUserData.bind(this)
+  }
+
+  updateUserData (data){
+    console.log(data);
+    this.setState({
+      userData: {
+        name: data.firstName,
+        job: data.work,
+        email: data.email,
+        linkedin: data.linkedin,
+        github: data.github
+      }
+    })
 }
 
   render() {
@@ -27,8 +41,8 @@ constructor (props){
       <div>
         <Header />
         <div className='page__container'>
-          <Card />
-          <Form />
+          <Card userDataInfo={this.state.userData}/>
+          <Form updateUserData={this.updateUserData}/>
         </div>
         <Footer />
       </div>
