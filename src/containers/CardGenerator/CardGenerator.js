@@ -14,34 +14,46 @@ class CardGenerator extends React.Component {
         name: "",
         job: "",
         email: "",
-        phone: 0,
+        phone: "",
         linkedin: "",
         github: "",
-        photo: "",
+        // photo: "",
       },
     };
-    this.updateUserData = this.updateUserData.bind(this);
+    this.fileInput= React.createRef();
+    this.handleChangeInput = this.handleChangeInput.bind(this);
   }
 
-  updateUserData(data) {
+  // función que toma los inputs
+  handleChangeInput(ev) {
+
+    // destructuring 
+
+    const target = ev.target;
+    const value = target.value;
+    const id = target.id;
+    const updatedState = this.state.userData;
+    updatedState[id] = value;
+    
+    // ES6 syntax
+    // recursive merge ? 
     this.setState({
-      userData: {
-        name: data.firstName,
-        job: data.work,
-        email: data.email,
-        linkedin: data.linkedin,
-        github: data.github,
-      },
-    });
-  }
+      userData: updatedState
+    })
+   }
+
+
 
   render() {
     return (
       <div>
         <Header />
         <div className="page__container">
-          <Card userDataInfo={this.state.userData} />
-          <Form updateUserData={this.updateUserData} />
+          <Card 
+            userDataInfo={this.state.userData} />
+          <Form 
+            userDataInfo={this.state.userData}
+            handleChangeInput={this.handleChangeInput} />
         </div>
         <Footer />
       </div>

@@ -1,39 +1,30 @@
 import React from "react";
 
 class FillOut extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleChangeInput = this.handleChangeInput.bind(this);
-  }
-  data = {};
-  handleChangeInput(ev) {
-    const inputEl = ev.currentTarget.value;
-    const inputId = ev.currentTarget.id;
-    this.data[inputId] = inputEl;
-    this.props.updateUserData(this.data);
-  }
 
   render() {
     return (
       <fieldset className="page__container__form__fill js-formData ">
-        <label htmlFor="firstName"> Nombre completo </label>
+        <label htmlFor="name"> Nombre completo </label>
         <input
-          id="firstName"
+          id="name"//firstName
           type="text"
           className="js-userName"
           placeholder="Ej: Sally Jill"
           required
-          onChange={this.handleChangeInput}
+          onChange={this.props.handleChangeInput}
+          value={this.props.userDataInfo.name}
         />
 
-        <label htmlFor="work"> Puesto</label>
+        <label htmlFor="job"> Puesto</label>
         <input
-          id="work"
+          id="job"
           type="text"
           className="js-userJob"
           placeholder="Ej: Front-end unicorn"
           required
-          onChange={this.handleChangeInput}
+          onChange={this.props.handleChangeInput}
+          value={this.props.userDataInfo.job}
         />
 
         <p>Imagen de perfil</p>
@@ -47,7 +38,8 @@ class FillOut extends React.Component {
             </button>
             <input
               type="file"
-              id="img-selector"
+              id="img-selector" 
+              ref={this.props.fileInput}
               className="action__hiddenField js__profile-upload-btn"
             />
           </div>
@@ -61,17 +53,19 @@ class FillOut extends React.Component {
           className="js-email"
           placeholder="Ej: sally-hill@gmail.com"
           required
-          onChange={this.handleChangeInput}
+          onChange={this.props.handleChangeInput}
+          value={this.props.userDataInfo.email}
         />
 
-        <label htmlFor="telephone"> Teléfono</label>
+        <label htmlFor="phone"> Teléfono</label>
         <input
-          id="telephone"
+          id="phone"
           type="tel"
           className="js-phoneNumber"
           placeholder="Ej: 555-55-55-55"
           required
-          onChange={this.handleChangeInput}
+          onChange={this.props.handleChangeInput}
+          value={this.props.userDataInfo.phone}
         />
 
         <label htmlFor="linkedin"> Linkedin</label>
@@ -80,7 +74,8 @@ class FillOut extends React.Component {
           type="text"
           className="js-linkedin"
           placeholder="Ej: linkedin.com/in/sally.hill"
-          onChange={this.handleChangeInput}
+          onChange={this.props.handleChangeInput}
+          value={this.props.userDataInfo.linkedin}
         />
 
         <label htmlFor="github"> Github</label>
@@ -89,7 +84,8 @@ class FillOut extends React.Component {
           type="text"
           className="js-github"
           placeholder="Ej: @sally-hill"
-          onChange={this.handleChangeInput}
+          onChange={this.props.handleChangeInput}
+          value={this.props.userDataInfo.github}
         />
       </fieldset>
     );

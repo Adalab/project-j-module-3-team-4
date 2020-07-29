@@ -17,8 +17,8 @@ class Form extends React.Component {
 
         <Collapsible iconClass="far fa-keyboard" title="Rellena">
           <FillOut
+            userDataInfo={this.props.userDataInfo}
             handleChangeInput={this.props.handleChangeInput}
-            updateUserData={this.props.updateUserData}
           />
         </Collapsible>
         <Collapsible iconClass="fas fa-share-alt" title="Comparte">
