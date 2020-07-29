@@ -1,5 +1,5 @@
-@import "../../stylesheets/mixins", "../../stylesheets/reset",
-  "../../stylesheets/variables";
+@import '../../stylesheets/mixins', '../../stylesheets/reset',
+  '../../stylesheets/variables';
 
 .page {
   &__box {
@@ -10,7 +10,7 @@
       rgb(142, 172, 233) 100%
     ); */
     // background-color: $colorBackgroundIndex;
-    background-image: url("../../images/background-b.jpg");
+    background-image: url('../../images/background-b.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,6 +56,9 @@
           font-size: 1.625rem;
           color: lightsteelblue;
         }
+        .title-steps {
+          color: lightsteelblue;
+        }
 
         .elem-title {
           color: lightsteelblue;
@@ -69,7 +72,7 @@
       height: 42px;
       border-radius: 21px;
       background-color: lightsteelblue;
-      color: $colorLight;
+      color: rgb(31, 47, 70);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -86,7 +89,7 @@
       outline: none;
       &:hover {
         font-weight: bold;
-        background-color: lightsteelblue;
+        background-color: rgb(31, 47, 70);
         color: lightsteelblue;
       }
     }

@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import "./App.scss";
+import './App.scss';
 
-import Landing from "./Landing/Landing";
-import CardGenerator from "./CardGenerator/CardGenerator";
+import Landing from './Landing/Landing';
+import CardGenerator from './CardGenerator/CardGenerator';
 
 class App extends React.Component {
   state = {
@@ -12,7 +12,7 @@ class App extends React.Component {
 
   changePage = () => {
     this.setState({
-      isLanding: !this.state.isLanding,
+      isLanding: false,
     });
   };
 
@@ -23,7 +23,7 @@ class App extends React.Component {
       result = <Landing isLanding={this.changePage} />;
     }
 
-    return <div className="App">{result}</div>;
+    return <div className='App'>{result}</div>;
   }
 }
 

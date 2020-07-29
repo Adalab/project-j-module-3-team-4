@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class FillOut extends React.Component {
 
@@ -28,11 +28,11 @@ class FillOut extends React.Component {
         />
 
         <p>Imagen de perfil</p>
-        <div className="container-preview">
-          <div className="action">
+        <div className='container-preview'>
+          <div className='action'>
             <button
-              className="action__upload-btn js__profile-trigger"
-              type="button"
+              className='action__upload-btn js__profile-trigger'
+              type='button'
             >
               Añadir imagen
             </button>
@@ -43,15 +43,15 @@ class FillOut extends React.Component {
               className="action__hiddenField js__profile-upload-btn"
             />
           </div>
-          <div className="profile__preview js__profile-preview"></div>
+          <div className='profile__preview js__profile-preview'></div>
         </div>
 
-        <label htmlFor="email"> Email</label>
+        <label htmlFor='email'> Email</label>
         <input
-          id="email"
-          type="email"
-          className="js-email"
-          placeholder="Ej: sally-hill@gmail.com"
+          id='email'
+          type='email'
+          className='js-email'
+          placeholder='Ej: sally-hill@gmail.com'
           required
           onChange={this.props.handleChangeInput}
           value={this.props.userDataInfo.email}
@@ -68,7 +68,7 @@ class FillOut extends React.Component {
           value={this.props.userDataInfo.phone}
         />
 
-        <label htmlFor="linkedin"> Linkedin</label>
+        <label htmlFor='linkedin'> Linkedin</label>
         <input
           id="linkedin"
           type="text"
@@ -78,7 +78,7 @@ class FillOut extends React.Component {
           value={this.props.userDataInfo.linkedin}
         />
 
-        <label htmlFor="github"> Github</label>
+        <label htmlFor='github'> Github</label>
         <input
           id="github"
           type="text"
