@@ -2,6 +2,7 @@ import React from "react";
 import "./Card.scss";
 import Esperanza from "../../zodiaco/crop-3.jpeg";
 import CardSocialMediaIcon from "./CardSocialMediaIcon/CardSocialMediaIcon";
+import Profile from "../Photo/Profile/Profile";
 
 class Card extends React.Component {
   render() {
@@ -28,10 +29,11 @@ class Card extends React.Component {
               {this.props.userDataInfo.job || "Front-end Developer"}
             </p>
           </div>
-          <div
+          <Profile avatar={this.props.avatar}/>
+          {/* <div
             className="profile__image js__profile-image profile page__container__card__box__imgContainer"
             style={defaultImage}
-          ></div>
+          ></div> */}
           <ul className="page__container__card__box__socialMedia js-socialMediaList">
             <CardSocialMediaIcon
               anchorClass="fas fa-mobile-alt"

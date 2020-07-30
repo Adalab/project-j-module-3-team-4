@@ -10,9 +10,11 @@ const Design = (props) => {
           <input
             type="radio"
             id="drawing"
-            name="drawing"
+            name="palette"
             className="water-palette"
+            value="1"
             defaultChecked
+            onChange={props.handleChangeInput}
           />
           <div className="water">
             <span className="square square1"></span>
@@ -25,8 +27,10 @@ const Design = (props) => {
           <input
             type="radio"
             id="drawing2"
-            name="drawing"
+            name="palette"
+            value="2"
             className="fire-palette"
+            onChange={props.handleChangeInput}
           />
           <div className="fire">
             <span className="square square1"></span>
@@ -39,8 +43,10 @@ const Design = (props) => {
           <input
             type="radio"
             id="drawing3"
-            name="drawing"
+            name="palette"
+            value="3"
             className="earth-palette"
+            onChange={props.handleChangeInput}
           />
           <div className="earth">
             <span className="square square1"></span>
@@ -53,8 +59,10 @@ const Design = (props) => {
           <input
             type="radio"
             id="drawing4"
-            name="drawing"
+            name="palette"
             className="air-palette"
+            onChange={props.handleChangeInput}
+            value="4"
           />
           <div className="air">
             <span className="square square1"></span>
