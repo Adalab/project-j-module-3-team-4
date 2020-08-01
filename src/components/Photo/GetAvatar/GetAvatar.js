@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import './GetAvatar.css';
+import React, { Component } from 'react';
+import './GetAvatar.scss';
 import PropTypes from 'prop-types';
 
 class GetAvatar extends Component {
@@ -8,17 +8,17 @@ class GetAvatar extends Component {
 
     this.fr = new FileReader();
     this.myFileField = React.createRef();
-    
+
     this.handleFilePicker = this.handleFilePicker.bind(this);
     this.uploadImage = this.uploadImage.bind(this);
     this.getImage = this.getImage.bind(this);
   }
 
   handleFilePicker() {
-    this.myFileField.current.click(); 
+    this.myFileField.current.click();
   }
 
-  uploadImage(e){
+  uploadImage(e) {
     const myFile = e.currentTarget.files[0];
     this.fr.addEventListener('load', this.getImage);
     this.fr.readAsDataURL(myFile);
@@ -30,18 +30,32 @@ class GetAvatar extends Component {
   }
 
   getPreview(isDefault, image) {
-    return (!isDefault) ? {backgroundImage: `url(${image})`} : {};
+    return !isDefault ? { backgroundImage: `url(${image})` } : {};
   }
 
   render() {
-    const {isAvatarDefault, avatar} = this.props;
+    const { isAvatarDefault, avatar } = this.props;
     return (
-      <div className="get-avatar">
-        <button className="get-avatar__trigger" type="button" onClick={this.handleFilePicker}>Upload IMAGE!</button>
-        
-        <input type="file" ref={this.myFileField} className="get-avatar__upload-field" onChange={this.uploadImage} />
-        
-        <div className="get-avatar__preview" style={this.getPreview(isAvatarDefault, avatar)}></div>
+      <div className='get-avatar'>
+        <button
+          className='get-avatar__trigger action__upload-btn action'
+          type='button'
+          onClick={this.handleFilePicker}
+        >
+          Añadir imagen
+        </button>
+
+        <input
+          type='file'
+          ref={this.myFileField}
+          className='get-avatar__upload-field'
+          onChange={this.uploadImage}
+        />
+
+        <div
+          className='get-avatar__preview'
+          style={this.getPreview(isAvatarDefault, avatar)}
+        ></div>
       </div>
     );
   }
@@ -50,7 +64,7 @@ class GetAvatar extends Component {
 GetAvatar.propTypes = {
   isAvatarDefault: PropTypes.bool.isRequired,
   avatar: PropTypes.string.isRequired,
-  updateAvatar: PropTypes.func.isRequired
+  updateAvatar: PropTypes.func.isRequired,
 };
 
 export default GetAvatar;

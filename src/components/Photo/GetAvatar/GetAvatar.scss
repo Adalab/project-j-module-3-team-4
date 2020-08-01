@@ -1,0 +1,35 @@
+@import '../../../stylesheets/mixins', '../../../stylesheets/reset',
+  '../../../stylesheets/variables';
+
+.get-avatar {
+  display: flex;
+  margin: 20px 0;
+}
+.get-avatar__trigger {
+  width: 140px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: $colorSecondaryDark;
+  color: $colorLight;
+  font-family: $fontFamily;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+  box-shadow: none;
+  outline: none;
+}
+.get-avatar__upload-field {
+  display: none;
+}
+.get-avatar__preview {
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  margin-left: 15px;
+  width: 30px;
+  margin-top: 10px;
+  border: 1px solid #a2deaf;
+}

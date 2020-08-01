@@ -1,5 +1,5 @@
-@import "../../stylesheets/mixins", "../../stylesheets/reset",
-  "../../stylesheets/variables";
+@import '../../stylesheets/mixins', '../../stylesheets/reset',
+  '../../stylesheets/variables';
 
 .page__container {
   &__form {
@@ -13,6 +13,10 @@
 
     @include desktop {
       max-width: 329px;
+    }
+
+    &__fill {
+      margin-bottom: 10px;
     }
 
     &__icon {
@@ -324,7 +328,7 @@
     background-color: #114e4e;
   }
 }
-.action__hiddenField {
+.get-avatar__upload-field {
   /* Ocultamos el input de tipo "file" porque no podemos 
     darle los estilos que queremos */
   display: none !important;
