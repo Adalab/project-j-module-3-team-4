@@ -1,0 +1,366 @@
+@import '../../stylesheets/mixins', '../../stylesheets/reset',
+  '../../stylesheets/variables';
+
+.page__container {
+  &__form {
+    padding: 20px;
+
+    @include tablet {
+      padding: 0px;
+      margin-right: 30px;
+      width: 100%;
+    }
+
+    @include desktop {
+      max-width: 329px;
+    }
+
+    &__fill {
+      margin-bottom: 10px;
+    }
+
+    &__icon {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 0px;
+      border-bottom: 1px solid $colorLines;
+      cursor: pointer;
+
+      &__title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+
+        & i {
+          height: 18px;
+          margin-right: 12px;
+          color: $colorSecondaryDark;
+        }
+
+        & h2 {
+          font-family: $fontFamily;
+          font-weight: 600;
+          font-size: 18px;
+          color: transparentize($colorDark, 0.2);
+          text-transform: uppercase;
+          &:hover {
+            color: $colorSecondaryDark;
+          }
+        }
+      }
+      & button {
+        background: none;
+        cursor: pointer;
+      }
+    }
+
+    &__design {
+      padding-top: 22px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: initial;
+      .element {
+        margin-right: 20px;
+      }
+      & h3 {
+        font-family: $fontFamily;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: $colorMedium;
+        margin-left: 20px;
+
+        @include tablet {
+          margin-left: 0px;
+        }
+      }
+      &__colorPalette {
+        label {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          margin-bottom: 20px;
+          input {
+            margin-right: 10px;
+          }
+          .water {
+            display: flex;
+            justify-content: flex-start;
+            .square {
+              margin: 0;
+              padding: 0;
+              display: inline-block;
+              //border: 1px solid red;
+              width: 30px;
+              height: 25px;
+            }
+            & .square1 {
+              background-color: #114e4e;
+            }
+            & .square2 {
+              background-color: #438792;
+            }
+            & .square3 {
+              background-color: #a2deaf;
+            }
+          }
+          .fire {
+            display: flex;
+            justify-content: flex-start;
+
+            .square {
+              margin: 0;
+              padding: 0;
+              display: inline-block;
+              //border: 1px solid red;
+              width: 30px;
+              height: 25px;
+            }
+            & .square1 {
+              background-color: #420101;
+            }
+            & .square2 {
+              background-color: #bd1010;
+            }
+            & .square3 {
+              background-color: #e95626;
+            }
+          }
+          .earth {
+            display: flex;
+            justify-content: flex-start;
+            .square {
+              margin: 0;
+              padding: 0;
+              display: inline-block;
+              //border: 1px solid red;
+              width: 30px;
+              height: 25px;
+            }
+            & .square1 {
+              background-color: #3e5b65;
+            }
+            & .square2 {
+              background-color: #eab052;
+            }
+            & .square3 {
+              background-color: #a0c0cf;
+            }
+          }
+          .air {
+            display: flex;
+            justify-content: flex-start;
+            .square {
+              margin: 0;
+              padding: 0;
+              display: inline-block;
+              //border: 1px solid red;
+              width: 30px;
+              height: 25px;
+            }
+            & .square1 {
+              background-color: #3b9c7f;
+            }
+            & .square2 {
+              background-color: #57c9a6;
+            }
+            & .square3 {
+              background-color: #a2deaf;
+            }
+          }
+        }
+      }
+    }
+    &__fill {
+      padding: 0px;
+      p {
+        font-family: $fontFamily;
+        font-size: 14px;
+        line-height: 20px;
+        color: $colorPrimaryDark;
+        margin-top: 18px;
+        text-align: left;
+      }
+
+      label,
+      input {
+        //border: 1px solid red;
+        display: block;
+        text-align: left;
+        width: 100%;
+      }
+      input {
+        height: 30px;
+        border: 1px solid #a2deaf;
+        font-family: $fontFamily;
+        font-size: 14px;
+        line-height: 20px;
+        color: $colorDark;
+        padding: 3px 9px 7px 9px;
+      }
+      input::placeholder {
+        font-family: $fontFamily;
+        font-size: 14px;
+        line-height: 20px;
+        color: transparentize($colorDark, 0.5);
+        padding: 3px 9px 7px 9px;
+      }
+
+      label {
+        padding-bottom: 7px;
+        padding-top: 20px;
+        color: $colorPrimaryDark;
+        font-family: $fontFamily;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    &__share {
+      width: 199px;
+      height: 50px;
+      border-radius: 12px;
+      background-color: $colorSecondaryDark;
+      color: $colorLight;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30px auto 30px auto;
+      cursor: pointer;
+      transition: background-color 1s ease;
+      box-shadow: none;
+      outline: none;
+      &:hover {
+        font-weight: bold;
+        background-color: #114e4e;
+      }
+      & .create {
+        background-color: $colorSecondaryDark;
+        text-transform: uppercase;
+        font-family: $fontFamilyBold;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      & .far {
+        font-size: 22px;
+        padding: 0px 9px 0px 0px;
+      }
+    }
+    & .create__text {
+      font-family: $fontFamily;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & .url {
+        margin-top: 5px;
+        font-family: $fontFamily;
+        font-size: 12px;
+        color: $colorSecondaryDark;
+        text-align: center;
+      }
+
+      & h4 {
+        font-size: 18px;
+        color: $colorFontCard;
+      }
+      & p {
+        font-size: 12px;
+        color: $colorSecondaryDark;
+        margin-top: 5px;
+      }
+      & .twitter-share-button {
+        width: 181px;
+        height: 30px;
+        border-radius: 3px;
+        color: $colorLight;
+        background-color: $colorTwitter;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        & .fab {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+// AVATAR
+
+.hidden {
+  display: none !important;
+}
+
+.rot {
+  transform: rotate(0.5turn);
+}
+
+.action {
+  text-align: center;
+}
+.action__upload-btn {
+  width: 140px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: $colorSecondaryDark;
+  color: $colorLight;
+  font-family: $fontFamily;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+  box-shadow: none;
+  outline: none;
+  &:hover {
+    font-weight: bold;
+    background-color: #114e4e;
+  }
+}
+.get-avatar__upload-field {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+    darle los estilos que queremos */
+  display: none !important;
+}
+
+.container-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.profile__image,
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ccc;
+}
+.profile__image {
+  width: 240px;
+  height: 205px;
+}
+
+.profile__preview {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
