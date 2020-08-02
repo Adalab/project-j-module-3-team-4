@@ -1,0 +1,35 @@
+@import '../../../stylesheets/mixins', '../../../stylesheets/reset',
+  '../../../stylesheets/variables';
+
+.page__container__card__reset {
+  width: 240px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__btn {
+    width: 75px;
+    height: 30px;
+    border-radius: 22.5px;
+    border: 1px solid $colorLight;
+    background-color: transparent;
+    font-size: 12px;
+    font-family: $fontFamily;
+    color: $colorLight;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $colorBackgroundLight;
+      color: $colorSecondaryDark;
+      border: 1px solid $colorSecondaryDark;
+      font-weight: bold;
+    }
+
+    .far .fa-trash-alt {
+      font-size: 12px;
+      color: $colorFontCard;
+    }
+  }
+}

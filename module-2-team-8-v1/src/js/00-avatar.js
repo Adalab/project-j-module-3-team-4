@@ -12,7 +12,6 @@ const profilePreview = document.querySelector('.js__profile-preview');
  * lo convierta a algo con lo que podamos trabajar.
  * Añade un listener al FR para que ejecute una función
  * al tener los datos listos
- * @param {evento} e
  */
 function getImage(e) {
   const myFile = e.currentTarget.files[0];

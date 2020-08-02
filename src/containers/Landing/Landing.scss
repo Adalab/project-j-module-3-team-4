@@ -1,0 +1,154 @@
+@import '../../stylesheets/mixins', '../../stylesheets/reset',
+  '../../stylesheets/variables';
+
+.page {
+  &__box {
+    /* background: rgb(158, 191, 255);
+    background: radial-gradient(
+      circle,
+      rgba(158, 191, 255, 1) 0%,
+      rgb(142, 172, 233) 100%
+    ); */
+    // background-color: $colorBackgroundIndex;
+<<<<<<< HEAD:src/stylesheets/Landing.scss
+    background-image: url('../zodiaco/noise.png');
+=======
+    background-image: url('../../images/background-b.jpg');
+>>>>>>> master:src/containers/Landing/Landing.scss
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    &__logo {
+      padding-bottom: 35.4px;
+      width: 250px;
+    }
+    &__title {
+<<<<<<< HEAD:src/stylesheets/Landing.scss
+      color: rgb(31, 47, 70);
+      font-family: $secondaryFontFamily;
+=======
+      color: lightsteelblue;
+      font-family: lightsteelblue;
+>>>>>>> master:src/containers/Landing/Landing.scss
+      font-size: 1.188rem;
+    }
+    &__paragraph {
+      width: 264.8px;
+      text-align: center;
+      color: lightsteelblue;
+      font-family: $fontFamily;
+      font-size: 0.75rem;
+      padding-bottom: 27px;
+    }
+    &__iconBox {
+      width: 268px;
+      height: 73.8px;
+      border: solid 1.6px lightsteelblue;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-evenly;
+      &__elem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $colorFontCard;
+        font-family: $fontFamily;
+        font-size: 1rem;
+        width: calc(100% / 3);
+        & i {
+          font-size: 1.625rem;
+<<<<<<< HEAD:src/stylesheets/Landing.scss
+          color: rgb(31, 47, 70);
+=======
+          color: lightsteelblue;
+        }
+        .title-steps {
+          color: lightsteelblue;
+>>>>>>> master:src/containers/Landing/Landing.scss
+        }
+
+        .elem-title {
+          color: lightsteelblue;
+        }
+      }
+    }
+    &__button {
+      margin-top: 38.6px;
+      margin-bottom: 30px;
+      width: 129px;
+      height: 42px;
+      border-radius: 21px;
+<<<<<<< HEAD:src/stylesheets/Landing.scss
+      background-color: rgb(31, 47, 70);
+      color: $colorLight;
+=======
+      background-color: lightsteelblue;
+      color: rgb(31, 47, 70);
+>>>>>>> master:src/containers/Landing/Landing.scss
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $fontFamily;
+      font-size: 1rem;
+      font-weight: 600;
+
+      line-height: 5rem;
+      cursor: pointer;
+      transition: background-color 1s ease;
+      box-shadow: none;
+      outline: none;
+      &:hover {
+        font-weight: bold;
+<<<<<<< HEAD:src/stylesheets/Landing.scss
+        background-color: lightsteelblue;
+        color: rgb(31, 47, 70);
+=======
+        background-color: rgb(31, 47, 70);
+        color: lightsteelblue;
+>>>>>>> master:src/containers/Landing/Landing.scss
+      }
+    }
+  }
+}
+
+@include tablet {
+  .page {
+    &__box {
+      &__logo {
+        padding-bottom: 31px;
+        width: 419px;
+      }
+      &__title {
+        font-size: 1.5rem;
+      }
+      &__paragraph {
+        font-size: 1rem;
+        width: 331px;
+      }
+      &__iconBox {
+        width: 325px;
+        height: 86px;
+        border: solid 2px rgb(31, 47, 70);
+        border-radius: 5px;
+
+        &__elem {
+          & i {
+            font-size: 1.813rem;
+          }
+        }
+      }
+      &__button {
+        margin-top: 186px;
+        margin-bottom: 59px;
+      }
+    }
+  }
+}
