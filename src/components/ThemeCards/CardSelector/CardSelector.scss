@@ -1,0 +1,49 @@
+.CardSelector {
+    display: inline-block;
+    width: 120px;
+    margin: -20px;
+    transition: margin .5s ease;
+    box-shadow: 0 5px 10px black;
+
+
+    &:hover {
+        margin: 0 25px;
+        cursor: pointer;
+    }
+}
+
+.card-view__container {
+    height: 160px;
+    width: 120px;
+    background-size: 120px 160px;
+    background-repeat: no-repeat;
+    border-radius: 18px;    
+}
+
+
+.moon {
+    background-image: url(../../../images/tarot-cards/card-moon6.png);
+}
+
+.heart {
+    background-image: url(../../../images/tarot-cards/card-heart.png);
+}
+
+.joker {
+    background-image: url(../../../images/tarot-cards/card-fool2.png);
+}
+
+
+.first {
+
+}
+
+
+.middle {
+    position: relative;
+    z-index: 10;
+}
+
+.third {
+
+}
