@@ -10,11 +10,7 @@
       rgb(142, 172, 233) 100%
     ); */
     // background-color: $colorBackgroundIndex;
-<<<<<<< HEAD:src/stylesheets/Landing.scss
-    background-image: url('../zodiaco/noise.png');
-=======
     background-image: url('../../images/background-b.jpg');
->>>>>>> master:src/containers/Landing/Landing.scss
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,13 +24,8 @@
       width: 250px;
     }
     &__title {
-<<<<<<< HEAD:src/stylesheets/Landing.scss
-      color: rgb(31, 47, 70);
-      font-family: $secondaryFontFamily;
-=======
       color: lightsteelblue;
       font-family: lightsteelblue;
->>>>>>> master:src/containers/Landing/Landing.scss
       font-size: 1.188rem;
     }
     &__paragraph {
@@ -63,14 +54,10 @@
         width: calc(100% / 3);
         & i {
           font-size: 1.625rem;
-<<<<<<< HEAD:src/stylesheets/Landing.scss
-          color: rgb(31, 47, 70);
-=======
           color: lightsteelblue;
         }
         .title-steps {
           color: lightsteelblue;
->>>>>>> master:src/containers/Landing/Landing.scss
         }
 
         .elem-title {
@@ -84,13 +71,8 @@
       width: 129px;
       height: 42px;
       border-radius: 21px;
-<<<<<<< HEAD:src/stylesheets/Landing.scss
-      background-color: rgb(31, 47, 70);
-      color: $colorLight;
-=======
       background-color: lightsteelblue;
       color: rgb(31, 47, 70);
->>>>>>> master:src/containers/Landing/Landing.scss
       display: flex;
       justify-content: center;
       align-items: center;
@@ -107,13 +89,8 @@
       outline: none;
       &:hover {
         font-weight: bold;
-<<<<<<< HEAD:src/stylesheets/Landing.scss
-        background-color: lightsteelblue;
-        color: rgb(31, 47, 70);
-=======
         background-color: rgb(31, 47, 70);
         color: lightsteelblue;
->>>>>>> master:src/containers/Landing/Landing.scss
       }
     }
   }

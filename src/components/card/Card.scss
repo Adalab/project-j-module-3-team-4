@@ -1,5 +1,5 @@
-@import "../../stylesheets/mixins", "../../stylesheets/reset",
-  "../../stylesheets/variables";
+@import '../../stylesheets/mixins', '../../stylesheets/reset',
+  '../../stylesheets/variables';
 
 .page__container {
   @include tablet {
@@ -17,16 +17,12 @@
     border: 1px solid $colorLight;
     border-radius: 25px;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       width: 150%;
       height: 150%;
       z-index: -1;
-<<<<<<< HEAD:src/stylesheets/Card.scss
-      background: url('../zodiaco/constelaciones.jpeg');
-=======
-      background: url("../../zodiaco/constelaciones.jpeg");
->>>>>>> master:src/components/card/Card.scss
+      background: url('../../zodiaco/constelaciones.jpeg');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -95,10 +91,13 @@
         line-height: 20px;
         /* color: $colorFontCard;*/
       }
-      &__imgContainer {
+      &__imgContainer,
+      .profile__avatar {
         width: 240px;
         height: 200px;
-        border: 1px solid red;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       &__socialMedia {
         display: flex;
@@ -182,7 +181,7 @@
 @include tablet {
   .page__container__card {
     &::before {
-      background: url("../../zodiaco/constelaciones.jpeg");
+      background: url('../../zodiaco/constelaciones.jpeg');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
