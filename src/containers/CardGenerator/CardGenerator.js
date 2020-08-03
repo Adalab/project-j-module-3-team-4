@@ -1,33 +1,32 @@
-import React from 'react';
-import Header from '../../components/Header/Header';
-import Card from '../../components/card/Card';
-import Form from '../../components/Form/Form';
-import Footer from '../../components/Footer/Footer';
-import './CardGenerator.scss';
-import defaultImage from '../../components/Photo/DefaultImage/DefaultImage';
+import React from "react";
+import Header from "../../components/Header/Header";
+import Card from "../../components/Card/Card";
+import Form from "../../components/Form/Form";
+import Footer from "../../components/Footer/Footer";
+import "./CardGenerator.scss";
+import defaultImage from "../../components/Photo/DefaultImage/DefaultImage";
 
 class CardGenerator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       userData: {
-        palette: '',
-        name: '',
-        job: '',
-        email: '',
-        phone: '',
-        linkedin: '',
-        github: '',
+        palette: "",
+        name: "",
+        job: "",
+        email: "",
+        phone: "",
+        linkedin: "",
+        github: "",
         photo: defaultImage,
       },
       isAvatarDefault: true,
-      profile: {
-        avatar: defaultImage,
-      },
+      activeCollapsible: "",
     };
     this.fileInput = React.createRef();
     this.handleChangeInput = this.handleChangeInput.bind(this);
     this.updateAvatar = this.updateAvatar.bind(this);
+    this.handleReset = this.handleReset.bind(this);
   }
 
   // función que toma los inputs
@@ -60,6 +59,31 @@ class CardGenerator extends React.Component {
     });
   }
 
+<<<<<<< HEAD
+=======
+  handleReset() {
+    this.setState({
+      userData: {
+        palette: "",
+        name: "",
+        job: "",
+        email: "",
+        phone: "",
+        linkedin: "",
+        github: "",
+        photo: defaultImage,
+      },
+      isAvatarDefault: true,
+    });
+  }
+
+  changeCollapsible(target) {
+    console.log("Target:", target);
+    // actualizar estado activeCollapsible con target
+    // añadir clase especial al colapsble que esté en activeCollapsible
+  }
+
+>>>>>>> master
   render() {
     // viva el destructuring!
     const { userData, isAvatarDefault } = this.state;
@@ -67,14 +91,27 @@ class CardGenerator extends React.Component {
     return (
       <div>
         <Header />
+<<<<<<< HEAD
         <div className='page__container'>
           <Card userDataInfo={this.state.userData} avatar={userData.photo} />
+=======
+        <div className="page__container">
+          <Card
+            userDataInfo={this.state.userData}
+            avatar={userData.photo}
+            handleReset={this.handleReset}
+          />
+>>>>>>> master
           <Form
             userDataInfo={this.state.userData}
             handleChangeInput={this.handleChangeInput}
             avatar={userData.photo}
             isAvatarDefault={isAvatarDefault}
             updateAvatar={this.updateAvatar}
+<<<<<<< HEAD
+=======
+            changeCollapsible={this.changeCollapsible}
+>>>>>>> master
           />
         </div>
         <Footer />

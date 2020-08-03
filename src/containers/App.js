@@ -1,29 +1,19 @@
-import React from 'react';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
 
-import './App.scss';
+import "./App.scss";
 
-import Landing from './Landing/Landing';
-import CardGenerator from './CardGenerator/CardGenerator';
+import Landing from "./Landing/Landing";
+import CardGenerator from "./CardGenerator/CardGenerator";
 
 class App extends React.Component {
-  state = {
-    isLanding: true,
-  };
-
-  changePage = () => {
-    this.setState({
-      isLanding: false,
-    });
-  };
-
   render() {
-    let result = <CardGenerator />;
-
-    if (this.state.isLanding) {
-      result = <Landing isLanding={this.changePage} />;
-    }
-
-    return <div className='App'>{result}</div>;
+    return (
+      <Switch>
+        <Route exact path="/" component={Landing} />
+        <Route path="/card-generator" component={CardGenerator} />
+      </Switch>
+    );
   }
 }
 
