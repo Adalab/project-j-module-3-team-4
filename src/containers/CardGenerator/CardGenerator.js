@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import Card from '../../components/Card/Card';
+import Card from '../../components/card/Card';
 import Form from '../../components/Form/Form';
 import Footer from '../../components/Footer/Footer';
 import './CardGenerator.scss';
