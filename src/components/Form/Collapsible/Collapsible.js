@@ -7,8 +7,14 @@ function Collapsible(props) {
   };
 
   return (
-    <div onClick={handleCollapsibleClick} id={props.id}>
-      <div className="page__container__form__icon">
+    <div
+      className={props.activeCollapsible === props.id ? "show" : "col-hidden"}
+    >
+      <div
+        className="page__container__form__icon"
+        onClick={handleCollapsibleClick}
+        id={props.id}
+      >
         <div className="page__container__form__icon__title">
           <i className={props.iconClass}></i>
           <h2>{props.title}</h2>

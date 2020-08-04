@@ -14,7 +14,7 @@ class Card extends React.Component {
     return (
       <section className="page__container__card">
         <Reset handleReset={this.props.handleReset} />
-        <div className="page__container__card__box">
+        <div className={`page__container__card__box palette-${this.props.palette}`}>
           <div className="page__container__card__box__border cold-border js-border-color">
             <h3 className="page__container__card__box__name js-name cold-name js-userName-result">
               {this.props.userDataInfo.name || "Nombre y Apellidos"}

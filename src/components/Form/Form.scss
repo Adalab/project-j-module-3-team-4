@@ -1,5 +1,5 @@
-@import '../../stylesheets/mixins', '../../stylesheets/reset',
-  '../../stylesheets/variables';
+@import "../../stylesheets/mixins", "../../stylesheets/reset",
+  "../../stylesheets/variables";
 
 .page__container {
   &__form {
@@ -363,4 +363,11 @@
   width: 30px;
   height: 30px;
   margin-left: 15px;
+}
+/***********/
+
+.col-hidden {
+  .collapsible {
+    display: none;
+  }
 }

@@ -188,3 +188,54 @@
 
 @include desktop {
 }
+
+/**************/
+
+.palette-1 {
+  .page__container__card__box__name {
+    color: #420101;
+  }
+  .page__container__card__box__job {
+  }
+  .cold-icon {
+    a {
+    }
+  }
+}
+
+.palette-2 {
+  .page__container__card__box__name {
+  }
+  .page__container__card__box__job {
+  }
+  .cold-icon {
+    a {
+    }
+  }
+}
+
+.palette-3 {
+  .page__container__card__box__name {
+  }
+  .page__container__card__box__job {
+  }
+  .cold-icon {
+    a {
+    }
+  }
+}
+
+.palette-4 {
+  .page__container__card__box__name {
+    color: rgb(91, 154, 129);
+    border-color: rgb(122, 198, 168);
+  }
+  .page__container__card__box__job {
+    color: rgb(91, 154, 129);
+  }
+  .cold-icon {
+    color: rgb(177, 220, 179);
+    a {
+    }
+  }
+}

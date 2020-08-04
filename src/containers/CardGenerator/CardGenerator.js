@@ -5,6 +5,7 @@ import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
 import "./CardGenerator.scss";
 import defaultImage from "../../components/Photo/DefaultImage/DefaultImage";
+import ls from "../../services/localStorage";
 
 class CardGenerator extends React.Component {
   constructor(props) {
@@ -27,9 +28,22 @@ class CardGenerator extends React.Component {
     this.handleChangeInput = this.handleChangeInput.bind(this);
     this.updateAvatar = this.updateAvatar.bind(this);
     this.handleReset = this.handleReset.bind(this);
+    this.changeCollapsible = this.changeCollapsible.bind(this);
   }
 
-  // función que toma los inputs
+  componentDidMount() {
+    // get info from localstorage
+    const userInfoGetLs = ls.get("userInfo", this.state.userData);
+    this.setState({
+      userData: userInfoGetLs,
+    });
+  }
+
+  componentDidUpdate() {
+    // guardar info en localstorage
+    ls.set("userInfo", this.state.userData);
+  }
+
   handleChangeInput(ev) {
     // destructuring
     const target = ev.target;
@@ -75,10 +89,13 @@ class CardGenerator extends React.Component {
     });
   }
 
-  changeCollapsible(target) {
-    console.log("Target:", target);
+  changeCollapsible(targetId) {
+    console.log("Target:", targetId);
     // actualizar estado activeCollapsible con target
-    // añadir clase especial al colapsble que esté en activeCollapsible
+    this.setState({
+      activeCollapsible:
+        targetId === this.state.activeCollapsible ? "" : targetId,
+    });
   }
 
   render() {
@@ -93,6 +110,7 @@ class CardGenerator extends React.Component {
             userDataInfo={this.state.userData}
             avatar={userData.photo}
             handleReset={this.handleReset}
+            palette={this.state.userData.palette}
           />
           <Form
             userDataInfo={this.state.userData}
@@ -101,6 +119,7 @@ class CardGenerator extends React.Component {
             isAvatarDefault={isAvatarDefault}
             updateAvatar={this.updateAvatar}
             changeCollapsible={this.changeCollapsible}
+            activeCollapsible={this.state.activeCollapsible}
           />
         </div>
         <Footer />
