@@ -15,6 +15,8 @@ class Form extends React.Component {
           updateAvatar={this.props.updateAvatar}
           changeCollapsible={this.props.changeCollapsible}
           activeCollapsible={this.props.activeCollapsible}
+          urls={this.props.urls}
+          sendData={this.props.sendData}
         />
       </form>
     );

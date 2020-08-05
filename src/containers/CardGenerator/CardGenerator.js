@@ -7,6 +7,10 @@ import "./CardGenerator.scss";
 import defaultImage from "../../components/Photo/DefaultImage/DefaultImage";
 import ls from "../../services/localStorage";
 
+
+
+
+
 class CardGenerator extends React.Component {
   constructor(props) {
     super(props);
@@ -23,12 +27,19 @@ class CardGenerator extends React.Component {
       },
       isAvatarDefault: true,
       activeCollapsible: "",
+      urls: {
+        twitterUrl: '',
+        cardUrl: ''
+      }
+
     };
     this.fileInput = React.createRef();
     this.handleChangeInput = this.handleChangeInput.bind(this);
     this.updateAvatar = this.updateAvatar.bind(this);
     this.handleReset = this.handleReset.bind(this);
     this.changeCollapsible = this.changeCollapsible.bind(this);
+    this.sendData = this.sendData.bind(this);
+    this.showURL = this.showURL.bind(this);
   }
 
   componentDidMount() {
@@ -98,6 +109,51 @@ class CardGenerator extends React.Component {
     });
   }
 
+  showURL(result) {
+    console.log('ejecutando', result);
+   if (result.success) {
+   this.setState({
+   urls: {
+     twitterUrl: `https://twitter.com/intent/tweet?text=Tu%20tarjeta%20es:%20${result.cardURL}`,
+     cardUrl: result.cardURL
+   }
+ });
+   } else {
+     this.setState({
+       urls:{
+         cardUrl: 'ERROR:' + result.error,
+       }
+     })
+   }
+ }
+
+  sendData(event) {
+  event.preventDefault();
+  console.log('Primer this', this);
+  console.log('objeto:', this.state.userData)
+  fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+    method: 'POST',
+    body: JSON.stringify(this.state.userData),
+    headers: {
+      'content-type': 'application/json',
+    },
+  })
+    .then(res => {
+      console.log('Segundo this', this)
+      return res.json();
+    })
+    .then(result => {
+      console.log(result);
+      console.log('Tercer this', this);
+      this.showURL(result);
+    })
+    .catch((error)=> {
+      console.log(error);
+    });
+}
+
+
+
   render() {
     // viva el destructuring!
     const { userData, isAvatarDefault } = this.state;
@@ -120,6 +176,8 @@ class CardGenerator extends React.Component {
             updateAvatar={this.updateAvatar}
             changeCollapsible={this.changeCollapsible}
             activeCollapsible={this.state.activeCollapsible}
+            urls={this.state.urls}
+            sendData={this.sendData}
           />
         </div>
         <Footer />

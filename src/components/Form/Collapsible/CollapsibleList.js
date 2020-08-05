@@ -39,7 +39,7 @@ function CollapsibleList(props) {
         activeCollapsible={props.activeCollapsible}
         changeCollapsible={props.changeCollapsible}
       >
-        <Share />
+        <Share urls={props.urls} sendData={props.sendData}/>
       </Collapsible>
     </div>
   );
