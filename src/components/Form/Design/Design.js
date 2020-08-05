@@ -2,7 +2,7 @@ import React from "react";
 
 const Design = (props) => {
   return (
-    <div className="page__container__form__design js-design">
+    <div className="page__container__form__design js-design collapsible">
       <h3>Colores</h3>
       <div className="page__container__form__design__colorPalette">
         <label htmlFor="drawing">

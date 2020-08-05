@@ -1,14 +1,13 @@
-import React from 'react';
-import GetAvatar from '../../Photo/GetAvatar/GetAvatar';
+import React from "react";
+import GetAvatar from "../../Photo/GetAvatar/GetAvatar";
 
 class FillOut extends React.Component {
-
   render() {
     return (
-      <fieldset className="page__container__form__fill js-formData ">
+      <fieldset className="page__container__form__fill js-formData collapsible">
         <label htmlFor="name"> Nombre completo </label>
         <input
-          id="name"//firstName
+          id="name" //firstName
           name="name"
           type="text"
           className="js-userName"
@@ -32,11 +31,10 @@ class FillOut extends React.Component {
 
         <GetAvatar
           avatar={this.props.avatar}
-          isAvatarDefault={this.props.isAvatarDefault} 
-          updateAvatar={this.props.updateAvatar}/>
-            
+          isAvatarDefault={this.props.isAvatarDefault}
+          updateAvatar={this.props.updateAvatar}
+        />
 
-            
         {/* <p>Imagen de perfil</p>
         <div className='container-preview'>
           <div className='action'>
@@ -56,13 +54,13 @@ class FillOut extends React.Component {
           <div className='profile__preview js__profile-preview'></div>
         </div> */}
 
-        <label htmlFor='email'> Email</label>
+        <label htmlFor="email"> Email</label>
         <input
-          id='email'
-          name='email'
-          type='email'
-          className='js-email'
-          placeholder='Ej: sally-hill@gmail.com'
+          id="email"
+          name="email"
+          type="email"
+          className="js-email"
+          placeholder="Ej: sally-hill@gmail.com"
           required
           onChange={this.props.handleChangeInput}
           value={this.props.userDataInfo.email}
@@ -80,7 +78,7 @@ class FillOut extends React.Component {
           value={this.props.userDataInfo.phone}
         />
 
-        <label htmlFor='linkedin'> Linkedin</label>
+        <label htmlFor="linkedin"> Linkedin</label>
         <input
           id="linkedin"
           name="linkedin"
@@ -91,7 +89,7 @@ class FillOut extends React.Component {
           value={this.props.userDataInfo.linkedin}
         />
 
-        <label htmlFor='github'> Github</label>
+        <label htmlFor="github"> Github</label>
         <input
           id="github"
           name="github"
