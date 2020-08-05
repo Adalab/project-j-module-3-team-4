@@ -10,6 +10,7 @@
       rgb(142, 172, 233) 100%
     ); */
     // background-color: $colorBackgroundIndex;
+    transition: background-image 1s ease;
     background-image: url('../../images/background-b.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -25,8 +26,9 @@
     }
     &__title {
       color: lightsteelblue;
-      font-family: lightsteelblue;
+      font-family: $fontFamily;
       font-size: 1.188rem;
+      transition: all .5s ease;
     }
     &__paragraph {
       width: 264.8px;
@@ -35,6 +37,7 @@
       font-family: $fontFamily;
       font-size: 0.75rem;
       padding-bottom: 27px;
+      transition: all .5s ease;
     }
     &__iconBox {
       width: 268px;
@@ -55,6 +58,7 @@
         & i {
           font-size: 1.625rem;
           color: lightsteelblue;
+          transition: all .5s ease;
         }
         .title-steps {
           color: lightsteelblue;
@@ -125,6 +129,105 @@
       &__button {
         margin-top: 186px;
         margin-bottom: 59px;
+      }
+    }
+  }
+}
+
+
+
+/***********/
+
+.joker {
+.page {
+  &__box {
+
+    background-image: url('../../images/background-t.jpg');
+
+
+    &__title {
+      color: rgb(175, 175, 175);
+      background-color: rgba(0,0,0,.5);
+
+    }
+    &__paragraph {
+
+      color: rgb(222, 208, 176);
+
+    }
+    &__iconBox {
+
+      border: solid 1.6px rgb(222, 206, 176);
+
+      &__elem {
+ 
+        color: rgb(222, 206, 176);
+
+        & i {
+          font-size: 1.625rem;
+          color: rgb(222, 206, 176);
+        }
+        .title-steps {
+          color: rgb(222, 191, 176);
+        }
+
+        .elem-title {
+          color: rgb(222, 204, 176);
+        }
+      }
+    }
+    &__button {
+
+      background-color: rgb(222, 178, 176);
+      color: rgb(31, 47, 70);
+
+      cursor: pointer;
+      transition: background-color 1s ease;
+      box-shadow: none;
+      outline: none;
+      &:hover {
+        font-weight: bold;
+        background-color: rgb(70, 34, 31);
+        color: rgb(222, 187, 176);
+      }
+    }
+  }
+}
+}
+
+
+/********* heart ********/
+
+.heart {
+  .page {
+    &__box {
+      background-image: url('../../images/background-m.jpg');
+      &__title {
+        color: rgb(141, 37, 37);
+      }
+      &__paragraph {
+        color: rgb(0, 0, 0);
+      }
+      &__iconBox {
+
+        border: solid 1.6px rgb(0, 0, 0);
+
+        &__elem {
+
+          color: rgb(73, 32, 59);
+
+          & i {
+            font-size: 1.625rem;
+            color: rgb(187, 59, 59);
+          }
+          .title-steps {
+            color: rgb(0, 0, 0);
+          }
+  
+          .elem-title {
+            color: rgb(222, 204, 176);
+          }
+        }
       }
     }
   }

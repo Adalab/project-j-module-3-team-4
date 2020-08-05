@@ -8,16 +8,10 @@ import BrandLogo from '../../images/logo-awesome-profile-cards.svg';
 import CardSelectorList from '../../components/ThemeCards/CardSelectorList/CardSelectorList';
 
 class Landing extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      theme: 'fool',
-    };
-  }
 
   render() {
     return (
-      <div>
+      <div className={this.props.theme}>
         <div className='page index1'>
           <div className='page__box'>
             <img
@@ -33,7 +27,7 @@ class Landing extends React.Component {
             <Link to='/card-generator'>
               <LandingButton />
             </Link>
-            <CardSelectorList />
+            <CardSelectorList handleTheme={this.props.handleTheme}/>
           </div>
         </div>
         <Footer />

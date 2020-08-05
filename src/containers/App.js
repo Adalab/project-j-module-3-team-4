@@ -7,11 +7,26 @@ import Landing from "./Landing/Landing";
 import CardGenerator from "./CardGenerator/CardGenerator";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      theme: 'fool',
+    };
+    this.handleTheme = this.handleTheme.bind(this);
+  }
+
+  handleTheme(newTheme) {
+    console.log('hello');
+    this.setState({
+      theme: newTheme
+    })
+  }
+
   render() {
     return (
       <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route path="/card-generator" component={CardGenerator} />
+        <Route exact path="/" render={() => <Landing theme={this.state.theme} handleTheme={this.handleTheme}/>} />
+        <Route path="/card-generator" render={() => <CardGenerator theme={this.state.theme}/>} />
       </Switch>
     );
   }
