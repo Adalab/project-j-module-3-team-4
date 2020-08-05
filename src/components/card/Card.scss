@@ -24,7 +24,7 @@
       z-index: -1;
       background: url('../../zodiaco/constelaciones.jpeg');
       background-size: contain;
-      background-repeat: no-repeat;
+      background-repeat: repeat;
       background-position: center;
       animation-name: rotZodiac;
       animation-duration: 600s;
@@ -74,7 +74,7 @@
       box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.6),
         0 1px 3px 0 rgba(0, 0, 0, 0.35);
       width: 240px;
-      height: 329px;
+      min-height: 329px;
       padding: 21px 0 10px 0;
       text-align: left;
 
@@ -84,22 +84,18 @@
         font-weight: bold;
         line-height: 20px;
         /*color: $colorPrimaryDark;*/
-        word-break: break-all;
+        word-break:break-all;
       }
       &__job {
         font-family: $fontFamilyTertiary;
         font-size: 16px;
         line-height: 20px;
         /* color: $colorFontCard;*/
-        word-break: break-all;
+        word-break:break-all;
       }
-      &__imgContainer,
-      .profile__avatar {
+      &__imgContainer,.profile__avatar {
         width: 240px;
         height: 200px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
       }
       &__socialMedia {
         display: flex;
@@ -128,6 +124,7 @@
 }
 .cold-job {
   color: $colorFontCard;
+
 }
 .cold-icon {
   color: $colorPrimaryDark;
@@ -183,13 +180,86 @@
 @include tablet {
   .page__container__card {
     &::before {
-      background: url('../../zodiaco/constelaciones.jpeg');
-      background-size: contain;
-      background-repeat: no-repeat;
+      background: url("../../zodiaco/constelaciones.jpeg");
+      background-size: 100%;
+      background-repeat: repeat;
       background-position: center;
     }
   }
 }
 
 @include desktop {
+}
+
+/**************/
+
+.palette-1 {
+  .page__container__card__box__border{
+    border-color:#114e4e;
+  }
+  .page__container__card__box__name {
+    color: #114e4e;
+  }
+  .page__container__card__box__job {
+    color: $colorFontCard;
+
+  }
+  .cold-icon {
+    color: $colorPrimaryDark;
+    border: 2px solid $colorPrimaryLight;
+    a {
+    }
+  }
+}
+
+.palette-2 {
+  .page__container__card__box__border {
+    border-color: #420101;
+  }
+  .page__container__card__box__name {
+    color: #420101;
+  }
+  .page__container__card__box__job {
+    color: #bd1010;
+  }
+  .cold-icon {
+    color: #420101;
+    border: 2px solid #e95626;
+    a {
+    }
+  }
+}
+
+.palette-3 {
+  .page__container__card__box__border {
+    border-color: #3e5b65;
+  }
+  
+  .page__container__card__box__name {
+    color:#3e5b65;
+  }
+  .page__container__card__box__job {
+    color:#eab052;
+  }  
+  .cold-icon {
+    color: #3e5b65;
+    border: 2px solid #a0c0cf;
+  }
+}
+
+.palette-4 {
+  .page__container__card__box__border {
+    border-color: rgb(122, 198, 168);
+  }
+  .page__container__card__box__name {
+    color: rgb(122, 198, 168);
+  }
+  .page__container__card__box__job {
+    color:  rgb(86,201,166)
+    ;
+  } 
+  .cold-icon {
+    color: rgb(177, 220, 179);
+
+  }
 }

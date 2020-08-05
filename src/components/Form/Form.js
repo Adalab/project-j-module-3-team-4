@@ -2,10 +2,6 @@ import React from "react";
 import CollapsibleList from "./Collapsible/CollapsibleList";
 import "./Form.scss";
 
-import Design from "./Design/Design";
-import Share from "./Share/Share";
-import FillOut from "./FillOut/FillOut";
-
 class Form extends React.Component {
   render() {
     return (
@@ -18,6 +14,9 @@ class Form extends React.Component {
           isAvatarDefault={this.props.isAvatarDefault}
           updateAvatar={this.props.updateAvatar}
           changeCollapsible={this.props.changeCollapsible}
+          activeCollapsible={this.props.activeCollapsible}
+          urls={this.props.urls}
+          sendData={this.props.sendData}
         />
       </form>
     );
