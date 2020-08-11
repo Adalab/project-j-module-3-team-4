@@ -3,9 +3,14 @@ import './CardSelector.scss';
 
 
 const CardSelector = props => {
-
+    const handleClick = () => {
+        console.log('click', props.theme);
+        props.handleTheme(props.theme);
+    }
     return(
-        <div className="CardSelector">
+        <div 
+            onClick={handleClick}
+            className="CardSelector">
             <div className={`card-view__container ${props.theme} ${props.position}`}></div>
         </div>
     )

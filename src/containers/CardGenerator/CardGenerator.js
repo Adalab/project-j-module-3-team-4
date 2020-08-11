@@ -152,7 +152,7 @@ class CardGenerator extends React.Component {
     const { userData, isAvatarDefault } = this.state;
 
     return (
-      <div>
+      <div className={this.props.theme} >
         <Header />
         <div className='page__container'>
           <Card

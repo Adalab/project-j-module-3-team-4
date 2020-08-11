@@ -1,6 +1,7 @@
 .CardList {
     position: relative;
-    width: 700px;
+    // border: solid 1px red;
+    // width: 700px;
     height: 180px;
 }
 
@@ -26,6 +27,7 @@
         width: 120px;
         margin: -20px;
         transition: margin .5s ease;
+        border-radius: 18px;  
     
     
         &:hover {
