@@ -2,6 +2,7 @@
 
 .page {
   &__header {
+    background-color: rgb(20, 25, 43);
     height: 110px;
     display: flex;
     flex: row;
@@ -15,5 +16,19 @@
         width: 201px;
       }
     }
+  }
+}
+
+
+
+.joker {
+  .page__header {
+    background-color: rgb(37, 36, 36);
+  }
+}
+
+.heart {
+  .page__header {
+    background-color: white;
   }
 }

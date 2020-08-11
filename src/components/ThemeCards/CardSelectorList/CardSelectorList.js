@@ -6,9 +6,9 @@ const CardSelectorList = props => {
 
     return(
         <div className={`CardList ${props.styleClass}`}>
-            <CardSelector theme="moon" position="first"/>
-            <CardSelector theme="joker" position="middle"/>
-            <CardSelector theme="heart" position="third"/>
+            <CardSelector theme="moon" position="first" handleTheme={props.handleTheme}/>
+            <CardSelector theme="joker" position="middle" handleTheme={props.handleTheme}/>
+            <CardSelector theme="heart" position="third" handleTheme={props.handleTheme}/>
         </div>
     )
     }

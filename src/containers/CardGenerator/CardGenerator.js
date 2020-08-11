@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
-import Card from '../../components/Card/Card';
+import Card from '../../components/card/Card';
 import Form from '../../components/Form/Form';
 import Footer from '../../components/Footer/Footer';
 import './CardGenerator.scss';
@@ -152,7 +152,7 @@ class CardGenerator extends React.Component {
     const { userData, isAvatarDefault } = this.state;
 
     return (
-      <div>
+      <div className={this.props.theme}>
         <Header />
         <div className='page__container'>
           <Card

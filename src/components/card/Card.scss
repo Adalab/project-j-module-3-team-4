@@ -2,6 +2,9 @@
   '../../stylesheets/variables';
 
 .page__container {
+  background-color: rgb(20, 25, 43);
+  color: rgb(241, 241, 241);
+  z-index: -1;
   @include tablet {
     padding: 20px 40px;
   }
@@ -16,6 +19,7 @@
     overflow: hidden;
     border: 1px solid $colorLight;
     border-radius: 25px;
+    z-index: 2;
     &::before {
       content: '';
       position: absolute;
@@ -258,5 +262,18 @@
   }
   .cold-icon {
     color: rgb(177, 220, 179);
+  }
+}
+
+.joker {
+  .page__container {
+    background-color: rgb(228, 228, 228);
+  }
+
+}
+
+.heart {
+  .page__container {
+    background-color: white;
   }
 }
