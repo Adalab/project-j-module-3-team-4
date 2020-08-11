@@ -1,8 +1,9 @@
-@import '../../stylesheets/mixins', '../../stylesheets/reset', '../../stylesheets/variables';
+@import '../../stylesheets/mixins', '../../stylesheets/reset',
+  '../../stylesheets/variables';
 
 .page {
   &__header {
-    background-color: rgb(20, 25, 43);
+    background-color: #14192b;
     height: 110px;
     display: flex;
     flex: row;
@@ -19,8 +20,6 @@
   }
 }
 
-
-
 .joker {
   .page__header {
     background-color: rgb(37, 36, 36);
@@ -29,6 +28,6 @@
 
 .heart {
   .page__header {
-    background-color: white;
+    background-color: rgb(34, 14, 14);
   }
 }

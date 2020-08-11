@@ -1,5 +1,5 @@
-@import "../../stylesheets/mixins", "../../stylesheets/reset",
-  "../../stylesheets/variables";
+@import '../../stylesheets/mixins', '../../stylesheets/reset',
+  '../../stylesheets/variables';
 
 .page__footer {
   width: 100%;
@@ -49,30 +49,29 @@
   }
 }
 
-
 .joker {
   .page__footer {
-  background-color: rgb(37, 36, 36);
+    background-color: rgb(37, 36, 36);
 
-  &__box {
-    &__paragraph {
-      font-family: $fontFamily;
-      font-size: 14px;
-      opacity: 0.5;
-      color: white;
+    &__box {
+      &__paragraph {
+        font-family: $fontFamily;
+        font-size: 14px;
+        opacity: 0.5;
+        color: white;
+      }
     }
-  }
   }
 }
 
 .heart {
   .page__footer {
-    background-color: white;
+    background-color: rgb(34, 14, 14);
 
-  &__box {
-    &__paragraph {
-      color: $colorMedium;
+    &__box {
+      &__paragraph {
+        color: $colorBackgroundLight;
+      }
     }
-  }
   }
 }

@@ -2,7 +2,7 @@
   '../../stylesheets/variables';
 
 .page__container {
-  background-color: rgb(20, 25, 43);
+  background-color: rgb(60, 70, 114);
   color: rgb(241, 241, 241);
   z-index: -1;
   @include tablet {
@@ -252,28 +252,27 @@
 
 .palette-4 {
   .page__container__card__box__border {
-    border-color: rgb(122, 198, 168);
+    border-color: #3b9c7f;
   }
   .page__container__card__box__name {
-    color: rgb(122, 198, 168);
+    color: #3b9c7f;
   }
   .page__container__card__box__job {
     color: rgb(86, 201, 166);
   }
   .cold-icon {
-    color: rgb(177, 220, 179);
+    color: #3b9c7f;
   }
 }
 
 .joker {
   .page__container {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(151, 148, 148);
   }
-
 }
 
 .heart {
   .page__container {
-    background-color: white;
+    background-color: rgb(88, 55, 55);
   }
 }

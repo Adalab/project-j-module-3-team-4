@@ -1,10 +1,9 @@
-@import "../../stylesheets/mixins", "../../stylesheets/reset",
-  "../../stylesheets/variables";
+@import '../../stylesheets/mixins', '../../stylesheets/reset',
+  '../../stylesheets/variables';
 
 .page__container {
   &__form {
     padding: 20px;
-
 
     @include tablet {
       padding: 0px;
@@ -375,7 +374,70 @@
 
 /**********/
 .moon {
-  h2 {
-    color: white;
+  // .h2 {
+  //   color: white;
+  // }
+  .page__container__form {
+    &__design {
+      h3 {
+        color: inherit;
+      }
+    }
+    &__fill {
+      label {
+        color: inherit;
+      }
+      input {
+        background-color: #606992;
+      }
+    }
+
+    h4 {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+.joker {
+  .page__container__form {
+    &__design {
+      h3 {
+        color: #114e4e;
+      }
+      .element {
+        color: #114e4e;
+      }
+    }
+    &__fill {
+      input {
+        background-color: rgb(173, 169, 169);
+      }
+    }
+    .url {
+      color: #54585a;
+    }
+  }
+}
+.heart {
+  .page__container__form {
+    &__design {
+      h3 {
+        color: inherit;
+      }
+      .element {
+        color: inherit;
+      }
+    }
+    &__fill {
+      label {
+        color: inherit;
+      }
+      input {
+        background-color: rgb(121, 95, 95);
+      }
+    }
+    .url,
+    h4 {
+      color: rgba(0, 0, 0, 0.8);
+    }
   }
 }
