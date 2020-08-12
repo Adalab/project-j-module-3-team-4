@@ -1,16 +1,16 @@
-import React from "react";
-import Collapsible from "./Collapsible";
-import Share from "../Share/Share";
-import FillOut from "../FillOut/FillOut";
-import Design from "../Design/Design";
+import React from 'react';
+import Collapsible from './Collapsible';
+import Share from '../Share/Share';
+import FillOut from '../FillOut/FillOut';
+import Design from '../Design/Design';
 
 function CollapsibleList(props) {
   return (
     <div>
       <Collapsible
-        id="collapsible1"
-        iconClass="far fa-object-ungroup"
-        title="Diseña"
+        id='collapsible1'
+        iconClass='far fa-object-ungroup'
+        title='Diseña'
         changeCollapsible={props.changeCollapsible}
         activeCollapsible={props.activeCollapsible}
       >
@@ -18,9 +18,9 @@ function CollapsibleList(props) {
       </Collapsible>
 
       <Collapsible
-        id="collapsible2"
-        iconClass="far fa-keyboard"
-        title="Rellena"
+        id='collapsible2'
+        iconClass='far fa-keyboard'
+        title='Rellena'
         activeCollapsible={props.activeCollapsible}
         changeCollapsible={props.changeCollapsible}
       >
@@ -33,13 +33,17 @@ function CollapsibleList(props) {
         />
       </Collapsible>
       <Collapsible
-        id="collapsible3"
-        iconClass="fas fa-share-alt"
-        title="Comparte"
+        id='collapsible3'
+        iconClass='fas fa-share-alt'
+        title='Comparte'
         activeCollapsible={props.activeCollapsible}
         changeCollapsible={props.changeCollapsible}
       >
-        <Share urls={props.urls} sendData={props.sendData}/>
+        <Share
+          urls={props.urls}
+          sendData={props.sendData}
+          loading={props.loading}
+        />
       </Collapsible>
     </div>
   );

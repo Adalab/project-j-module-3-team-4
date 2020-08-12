@@ -27,6 +27,7 @@ class CardGenerator extends React.Component {
         twitterUrl: '',
         cardUrl: '',
       },
+      loading: false,
     };
     this.fileInput = React.createRef();
     this.handleChangeInput = this.handleChangeInput.bind(this);
@@ -35,6 +36,7 @@ class CardGenerator extends React.Component {
     this.changeCollapsible = this.changeCollapsible.bind(this);
     this.sendData = this.sendData.bind(this);
     this.showURL = this.showURL.bind(this);
+    console.log(this.state);
   }
 
   componentDidMount() {
@@ -42,6 +44,7 @@ class CardGenerator extends React.Component {
     const userInfoGetLs = ls.get('userInfo', this.state.userData);
     this.setState({
       userData: userInfoGetLs,
+      // loading: false,
     });
   }
 
@@ -124,6 +127,7 @@ class CardGenerator extends React.Component {
 
   sendData(event) {
     event.preventDefault();
+    this.setState({ loading: true });
     console.log('Primer this', this);
     console.log('objeto:', this.state.userData);
     fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
@@ -141,6 +145,7 @@ class CardGenerator extends React.Component {
         console.log(result);
         console.log('Tercer this', this);
         this.showURL(result);
+        this.setState({ loading: false });
       })
       .catch((error) => {
         console.log(error);
@@ -171,6 +176,7 @@ class CardGenerator extends React.Component {
             activeCollapsible={this.state.activeCollapsible}
             urls={this.state.urls}
             sendData={this.sendData}
+            loading={this.state.loading}
           />
         </div>
         <Footer />

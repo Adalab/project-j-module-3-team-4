@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './GetAvatar.scss';
 import PropTypes from 'prop-types';
+import cardImage from '../../../zodiaco/crop-3_highres.jpg';
 
 class GetAvatar extends Component {
   constructor(props) {
