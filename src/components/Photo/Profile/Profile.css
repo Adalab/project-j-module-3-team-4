@@ -1,10 +1,9 @@
 /* .profile {} */
-/* .profile__avatar {
+.profile__avatar {
   border: 1px solid #ccc;
   width: 240px;
   height: 329px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-}*/
+}

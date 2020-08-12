@@ -170,9 +170,7 @@ function sendData(event) {
     .then(function (result) {
       showURL(result);
     })
-    .catch(function (error) {
-      console.log(error);
-    });
+    .catch(function (error) {});
 }
 
 function showURL(result) {

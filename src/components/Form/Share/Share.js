@@ -1,9 +1,6 @@
 import React from 'react';
 
 const Share = (props) => {
-  console.log(props.loading);
-  console.log(props);
-
   return (
     <div className="collapsible">
       <button

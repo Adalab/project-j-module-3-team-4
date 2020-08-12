@@ -16,7 +16,6 @@ class App extends React.Component {
   }
 
   handleTheme(newTheme) {
-    console.log('hello');
     this.setState({
       theme: newTheme,
     });
@@ -27,13 +26,13 @@ class App extends React.Component {
       <Switch>
         <Route
           exact
-          path='/'
+          path="/"
           render={() => (
             <Landing theme={this.state.theme} handleTheme={this.handleTheme} />
           )}
         />
         <Route
-          path='/card-generator'
+          path="/card-generator"
           render={() => <CardGenerator theme={this.state.theme} />}
         />
       </Switch>

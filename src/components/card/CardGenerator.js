@@ -5,9 +5,9 @@ import Form from './Form';
 import Footer from '../Footer';
 import '../../stylesheets/CardGenerator.scss';
 
-// Componente de clase - stateful 
+// Componente de clase - stateful
 class CardGenerator extends React.Component {
-  constructor (props){
+  constructor(props) {
     super(props);
     this.state = {
       userData: {
@@ -19,34 +19,28 @@ class CardGenerator extends React.Component {
         linkedin: '',
         github: '',
         photo: '',
-      }
-    }
+      },
+    };
 
-
-  // Función que actualiza el userData
-  this.updateUserData = this.updateUserData.bind(this)
+    // Función que actualiza el userData
+    this.updateUserData = this.updateUserData.bind(this);
   }
 
-  updateUserData (data){
-    console.log('UpdateUserData: ' + data);
+  updateUserData(data) {
     this.setState({
       userData: {
-        name: data
-      }
-    })
-
+        name: data,
+      },
+    });
   }
-
-  
-
 
   render() {
     return (
       <div>
         <Header />
-        <div className='page__container'>
-          <Card name={this.state.userData.name}/>
-          <Form updateUserData={this.updateUserData}/>
+        <div className="page__container">
+          <Card name={this.state.userData.name} />
+          <Form updateUserData={this.updateUserData} />
         </div>
         <Footer />
       </div>

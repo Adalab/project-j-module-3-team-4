@@ -37,7 +37,6 @@ class CardGenerator extends React.Component {
     this.changeCollapsible = this.changeCollapsible.bind(this);
     this.sendData = this.sendData.bind(this);
     this.showURL = this.showURL.bind(this);
-    console.log(this.state);
   }
 
   componentDidMount() {
@@ -60,7 +59,6 @@ class CardGenerator extends React.Component {
     // const value = target.value;
     // const id = target.id;
     const { value, name } = target;
-    console.log(value);
     const updatedState = this.state.userData;
     updatedState[name] = value;
 
@@ -69,7 +67,6 @@ class CardGenerator extends React.Component {
     this.setState({
       userData: updatedState,
     });
-    console.log(this.state.userData);
   }
 
   updateAvatar(img) {
@@ -100,7 +97,6 @@ class CardGenerator extends React.Component {
   }
 
   changeCollapsible(targetId) {
-    console.log('Target:', targetId);
     // actualizar estado activeCollapsible con target
     this.setState({
       activeCollapsible:
@@ -109,7 +105,6 @@ class CardGenerator extends React.Component {
   }
 
   showURL(result) {
-    console.log('ejecutando', result);
     if (result.success) {
       this.setState({
         urls: {
@@ -129,8 +124,6 @@ class CardGenerator extends React.Component {
   sendData(event) {
     event.preventDefault();
     this.setState({ loading: true });
-    console.log('Primer this', this);
-    console.log('objeto:', this.state.userData);
     fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
       method: 'POST',
       body: JSON.stringify(this.state.userData),
@@ -139,18 +132,13 @@ class CardGenerator extends React.Component {
       },
     })
       .then((res) => {
-        console.log('Segundo this', this);
         return res.json();
       })
       .then((result) => {
-        console.log(result);
-        console.log('Tercer this', this);
         this.showURL(result);
         this.setState({ loading: false });
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      .catch((error) => {});
   }
 
   render() {
@@ -182,8 +170,8 @@ class CardGenerator extends React.Component {
           />
         </div>
         {this.props.theme === 'heart' ? (
-          <div class="area">
-            <ul class="circles">
+          <div className="area">
+            <ul className="circles">
               <li></li>
               <li></li>
               <li></li>
