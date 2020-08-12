@@ -20,6 +20,7 @@
     border: 1px solid $colorLight;
     border-radius: 25px;
     z-index: 2;
+    transition: all 0.5s ease;
 
     &::before {
       content: '';
@@ -28,13 +29,14 @@
       height: 300%;
       z-index: -1;
       background: url('../../zodiaco/constelaciones.jpeg');
-      background-size: contain;
+      background-size: cover;
       background-repeat: repeat;
       background-position: center;
       animation-name: rotZodiac;
       animation-duration: 600s;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
+      transition: all 0.5s ease;
     }
 
     @include tablet {
@@ -267,13 +269,13 @@
   }
 }
 
-.joker {
+.joker-theme {
   .page__container {
     background-color: rgb(151, 148, 148);
   }
 }
 
-.heart {
+.heart-theme {
   .page__container {
     background-color: rgb(88, 55, 55);
   }
