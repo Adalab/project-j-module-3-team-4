@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd9517a6625ea5b0e181d3d3eb1ec6d2",
+    "revision": "b5844db7f5a91ef934e082e13e78a9be",
     "url": "./index.html"
   },
   {
-    "revision": "8df11ee84f41450190a3",
-    "url": "./static/css/main.8c70f320.chunk.css"
+    "revision": "b8541525b5294c0d92e0",
+    "url": "./static/css/main.2057170d.chunk.css"
   },
   {
-    "revision": "ca6ed618abd92b0b7465",
-    "url": "./static/js/2.3e8d50eb.chunk.js"
+    "revision": "c2c23abd8029975c34da",
+    "url": "./static/js/2.88ced7af.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "./static/js/2.3e8d50eb.chunk.js.LICENSE.txt"
+    "url": "./static/js/2.88ced7af.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8df11ee84f41450190a3",
-    "url": "./static/js/main.beec9d41.chunk.js"
+    "revision": "b8541525b5294c0d92e0",
+    "url": "./static/js/main.eb09009f.chunk.js"
   },
   {
     "revision": "d398f17f5fe35014928b",
@@ -48,12 +48,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/card-moon6.3c0c1452.png"
   },
   {
-    "revision": "7e4a69758212c5f9a5a5b95d342fa79e",
-    "url": "./static/media/constelaciones.7e4a6975.jpeg"
+    "revision": "dc5514c083e48343c0417056a590a9c3",
+    "url": "./static/media/constelaciones.dc5514c0.jpeg"
   },
   {
     "revision": "13330e7afd05beef638366f12ac2eee5",
     "url": "./static/media/crop-3.13330e7a.jpeg"
+  },
+  {
+    "revision": "9cbbc6155975228c4ec50b104387d86c",
+    "url": "./static/media/crop-3_highres.9cbbc615.jpg"
   },
   {
     "revision": "e923ad9a30f316e779520db938d06e79",
