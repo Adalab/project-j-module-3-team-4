@@ -371,12 +371,44 @@
 }
 /***********/
 
+.page__container__form__icon {
+  position: relative;
+  z-index: 4;
+  transition: all 0.5s ease;
+  background-color: inherit;
+  .rot {
+    transition: all 0.5s ease;
+  }
+  &:hover {
+    .rot {
+      transform: rotateX(45deg);
+    }
+  }
+}
+.collapsible {
+  transition: opacity 0.5s ease 0s, transform 1.5s ease 0s;
+}
 .col-hidden {
   .collapsible {
-    display: none;
+    height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
   }
 }
 
+.show {
+  overflow: hidden;
+
+  .collapsible {
+    height: auto;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .rot {
+    transform: rotateX(45deg);
+  }
+}
 /**********/
 .moon-theme {
   // .h2 {
@@ -432,6 +464,13 @@
 }
 .heart-theme {
   .page__container__form {
+    .action__upload-btn {
+      background-color: #8386c7;
+
+      &:hover {
+        background-color: #c783be;
+      }
+    }
     &__design {
       h3 {
         color: inherit;
@@ -455,6 +494,53 @@
     .url,
     h4 {
       color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .page__container__form__icon {
+    position: relative;
+    background-color: #4e54c8;
+    z-index: 4;
+    transition: all 0.5s ease;
+
+    .rot {
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      h2 {
+        color: pink;
+      }
+
+      .rot {
+        transform: rotateX(45deg);
+      }
+    }
+    i {
+      color: rgb(211, 82, 211);
+    }
+  }
+  .collapsible {
+    transition: opacity 0.5s ease 0s, transform 1.5s ease 0s;
+  }
+  .col-hidden {
+    .collapsible {
+      height: 0;
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  .show {
+    overflow: hidden;
+
+    .collapsible {
+      height: auto;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .rot {
+      transform: rotateX(45deg);
     }
   }
 }

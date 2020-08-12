@@ -45,6 +45,8 @@
 
     & img {
       width: 100%;
+      position: relative;
+      z-index: 2;
     }
   }
 }
@@ -67,6 +69,8 @@
 .heart-theme {
   .page__footer {
     background-color: rgb(34, 14, 14);
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
 
     &__box {
       &__paragraph {

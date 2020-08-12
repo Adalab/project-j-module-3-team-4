@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/Footer';
 import './CardGenerator.scss';
 import defaultImage from '../../components/Photo/DefaultImage/DefaultImage';
 import ls from '../../services/localStorage';
+import '../../stylesheets/background.scss';
 
 class CardGenerator extends React.Component {
   constructor(props) {
@@ -159,6 +160,7 @@ class CardGenerator extends React.Component {
     return (
       <div className={`${this.props.theme}-theme`}>
         <Header />
+
         <div className="page__container">
           <Card
             userDataInfo={this.state.userData}
@@ -179,6 +181,23 @@ class CardGenerator extends React.Component {
             loading={this.state.loading}
           />
         </div>
+        {this.props.theme === 'heart' ? (
+          <div class="area">
+            <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        ) : null}
+
         <Footer />
       </div>
     );

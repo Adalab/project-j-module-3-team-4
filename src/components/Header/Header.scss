@@ -10,6 +10,8 @@
     justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid $colorLight;
+    position: relative;
+    z-index: 4;
     &__logo {
       padding: 0 40px;
       img {
@@ -29,5 +31,7 @@
 .heart-theme {
   .page__header {
     background-color: rgb(34, 14, 14);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }

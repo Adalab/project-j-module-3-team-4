@@ -2,6 +2,7 @@ import React from 'react';
 
 const Share = (props) => {
   console.log(props.loading);
+  console.log(props);
 
   return (
     <div className="collapsible">
@@ -17,7 +18,7 @@ const Share = (props) => {
         {props.loading === true ? (
           <div className="loading">
             <p>Generando tarjeta...</p>
-            <div class="lds-roller">
+            <div className="lds-roller">
               <div></div>
               <div></div>
               <div></div>
@@ -29,7 +30,11 @@ const Share = (props) => {
               props.urls.cardUrl ? '' : 'hidden'
             }`}
           >
-            <h4>La tarjeta ha sido creada:</h4>
+            {props.urls.twitterUrl ? (
+              <h4>La tarjeta ha sido creada:</h4>
+            ) : (
+              <h4>Ha habido un problema:</h4>
+            )}
 
             <a
               className="js-url url"

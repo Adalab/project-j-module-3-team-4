@@ -277,6 +277,47 @@
 
 .heart-theme {
   .page__container {
+    position: relative;
+    z-index: 3;
     background-color: rgb(88, 55, 55);
+    background-color: transparent;
+
+    .page__container__card {
+      border: none;
+      &::before {
+        background-image: none;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    h2 {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .page__container__form__design {
+      h3 {
+        color: rgba(219, 93, 167, 0.9);
+      }
+      p {
+        color: rgba(209, 131, 177, 0.8);
+      }
+    }
+
+    .page__container__form__share {
+      background-color: rgba(219, 93, 167, 1);
+
+      &:hover {
+        background-color: rgb(136, 51, 192);
+      }
+    }
+    input {
+      background-color: rgba(255, 255, 255, 0.6) !important;
+      border: rgb(238, 146, 238) 1px solid;
+    }
+
+    input:focus {
+      box-shadow: none !important;
+      background-color: rgba(219, 93, 167, 0.6) !important;
+    }
   }
 }
