@@ -23,12 +23,16 @@
     &__logo {
       padding-bottom: 35.4px;
       width: 250px;
+      position: relative;
+      z-index: 2;
     }
     &__title {
       color: lightsteelblue;
       font-family: $fontFamily;
       font-size: 1.188rem;
       transition: all 0.5s ease;
+      position: relative;
+      z-index: 2;
     }
     &__paragraph {
       width: 264.8px;
@@ -38,6 +42,8 @@
       font-size: 0.75rem;
       padding-bottom: 27px;
       transition: all 0.5s ease;
+      position: relative;
+      z-index: 2;
     }
     &__iconBox {
       width: 268px;
@@ -46,6 +52,8 @@
       border-radius: 4px;
       display: flex;
       justify-content: space-evenly;
+      position: relative;
+      z-index: 2;
       &__elem {
         display: flex;
         flex-direction: column;
@@ -91,6 +99,8 @@
       transition: background-color 1s ease;
       box-shadow: none;
       outline: none;
+      position: relative;
+      z-index: 2;
       &:hover {
         font-weight: bold;
         background-color: rgb(31, 47, 70);
@@ -194,7 +204,7 @@
 .heart-theme {
   .page {
     &__box {
-      background-image: url('../../images/background-m.jpg');
+      background-image: none;
       &__title {
         color: rgb(141, 37, 37);
       }

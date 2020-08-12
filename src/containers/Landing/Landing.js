@@ -6,7 +6,7 @@ import LandingSteps from '../../components/LandingSteps/LandingSteps';
 import './Landing.scss';
 import BrandLogo from '../../images/logo-awesome-profile-cards.svg';
 import CardSelectorList from '../../components/ThemeCards/CardSelectorList/CardSelectorList';
-
+import '../../stylesheets/background.scss';
 class Landing extends React.Component {
   render() {
     return (
@@ -28,6 +28,22 @@ class Landing extends React.Component {
             </Link>
             <CardSelectorList handleTheme={this.props.handleTheme} />
           </div>
+          {this.props.theme === 'heart' ? (
+            <div className="area">
+              <ul className="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          ) : null}
         </div>
         <Footer />
       </div>
